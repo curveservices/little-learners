@@ -16,6 +16,75 @@
     .learning-page,
     .policy-page {
         animation: fadeIn 1s backwards;
+        padding: 10rem 4rem;
+        h1 {
+            font-size: 4rem;
+            font-weight: 500;
+            margin: 0;
+        }
+        h2 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        h3 {
+            font-size: 2rem;
+            margin: 0;
+        }
+        p {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.125rem;
+            margin: 0.5rem 0;
+        }
+        .subtitle {
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+            font-family: 'Nunito', sans-serif;
+            font-size: 1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: var(--primary);
+            animation: fadeInUp 0.2s 0.5s backwards;
+        }
+        .indent {
+            width: 2em;
+            height: 2px;
+            background: var(--primary);
+            border-radius: 5px;
+        }
+        .text-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 0.5rem;
+            width: 50%;
+        }
+        .anim {
+            animation: fadeIn 1.5s forwards;
+            .cards-container {
+                .card {
+                    animation: fadeInUp 0.7s backwards;
+                }
+
+                @for $i from 1 through 10 {
+
+                    .card:nth-child(#{$i}) {
+                        animation-delay: #{0.4s + ($i * 0.2s)};
+                    }
+                }
+            }
+        }
+
+        .none {
+            opacity: 0;     
+        }
+        .hero {
+            .hero-image {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+        }
     }
 }
 .back-to-top {
