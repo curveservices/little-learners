@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0em;
+  overflow: hidden;
+  height: 100vh;
+  color: var(--primary);
+  font-family: 'Nunito', sans-serif;
+  text-transform: u;
+  h1 {
+    padding-top: 2rem;
+  }
+  img {
+    margin-top: 0rem;
+    width: 650px;
+  }
+}
