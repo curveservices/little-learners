@@ -1,0 +1,32 @@
+.second-section {
+    .cards-container {
+        position: relative;
+        z-index: 1;
+        padding: 12rem 0rem 4rem;
+    }
+    .body-img {
+        position: absolute;
+        left: 0;
+        opacity: 0.4;
+        z-index: -1;
+        margin-top: -0.3rem;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        clip-path: polygon(0 0, 100% 0, 100% 40%, 0 70%);
+    }
+}
+.fith-section {
+    margin-bottom: 4rem;
+    .body-img {
+        position: absolute;
+        left: 0;
+        opacity: 0.4;
+        z-index: -1;
+        margin-top: -0.3rem;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        clip-path: polygon(0% 70%, 100% 40%, 100% 100%, 0% 100%);
+    }
+}
