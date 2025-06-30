@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
-import './index.scss';
+import "./index.scss";
 const MenuToggle = ({ showNav, setShowNav }) => {
   return (
     <AnimatePresence mode="wait">
@@ -14,10 +14,10 @@ const MenuToggle = ({ showNav, setShowNav }) => {
         onClick={() => setShowNav(!showNav)}
         className="menu-icon"
       >
-        <FontAwesomeIcon 
-          icon={showNav ? faTimes : faBars} 
-          size="x2" 
-          color="black" 
+        <FontAwesomeIcon
+          icon={showNav ? faTimes : faBars}
+          size="x2"
+          color="black"
         />
       </motion.div>
     </AnimatePresence>
