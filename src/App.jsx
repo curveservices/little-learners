@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import { Suspense } from "react";
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import Layout from "./layout/main/index.jsx";
 import LoadingSpinner from "./components/loadingSpinner/index.jsx";
+import NotFound from "./pages/404"
 import Home from "./pages/home/index.jsx";
 
 import "./App.scss";
@@ -24,6 +25,14 @@ const router = createBrowserRouter(
           }
         />
       </Route>
+      <Route
+        path="*"
+        element={
+          <Suspense fallback={<LoadingSpinner />}>
+            <NotFound />
+          </Suspense>
+        }
+      />
     </>,
   ),
 );
