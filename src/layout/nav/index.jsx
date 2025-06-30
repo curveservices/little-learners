@@ -100,7 +100,7 @@ const Navbar = () => {
           </NavLink>
         </nav>
         <Socials />
-        <MenuToggle shaowNav={showNav} setShowNav={setShowNav} />
+        <MenuToggle showNav={showNav} setShowNav={setShowNav} />
       </header>
     </>
   );
