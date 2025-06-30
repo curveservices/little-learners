@@ -1,0 +1,156 @@
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+.testimonial-container {
+  padding: 8rem 0 0; 
+  .text-box {
+    align-content: center !important;
+    padding-bottom: 4rem;
+  }
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 400px;
+  overflow: hidden;
+  text-align: left;
+  color: #000;
+  background: #fff;
+  border: 3px solid var(--border);
+  padding: 2rem 3rem;
+  border-radius: 15px;
+
+  .text {
+    padding-top: 1rem;
+  }
+}
+.text-container {
+  position: relative;
+  overflow: hidden;
+  max-height: 260px;
+}
+.text-container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 5rem;
+  width: 100%;
+  background: linear-gradient(to top, #fff, transparent);
+  pointer-events: none;
+}
+
+.read-more-btn {
+  background: none;
+  border: none;
+  color: var(--secondary);
+  cursor: pointer;
+  font-weight:600;
+  margin-top: 15px;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.testimonial-modal {
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  padding: 2rem;
+  border-radius: 15px;
+  width: fit-content;
+  outline: none;
+  .text {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.close-modal-btn {
+  background: transparent;
+  color: #fff;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.slick-slider {
+  margin: 1rem 5rem 8rem;
+
+  .slick-dots {
+    bottom: -4rem;
+    button {
+      &::before {
+        color: var(--primary);
+        font-size: 10px;
+        line-height: 1;
+        opacity: 1;
+      }
+      &:hover {
+        opacity: 0.6;
+        color: var(--secondary);
+      }
+    }
+  }
+
+  .slick-prev,
+  .slick-next,
+  .slick-arrow {
+    z-index: 1;
+    color: #000;
+    background: var(--primary);
+    border-radius: 50%;
+  }
+
+  .slick-track {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .testimonial-container {
+    padding: 0;
+  }
+  .testimonial {
+      padding: 1rem;
+    .job {
+      margin-bottom: 0.25rem;
+    }
+    .text {
+      font-size: 12px;
+    }
+  }
+    .slick-slider {
+      .slick-dots {
+        bottom: -2.25rem;
+      }
+    }
+  .testimonial-modal {
+    width: 400px;
+  }
+
+  .slick-slider {
+    margin: 3rem 2.5rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  
+}
