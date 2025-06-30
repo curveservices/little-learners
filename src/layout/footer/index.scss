@@ -1,0 +1,51 @@
+footer {
+    background: var(--footer);
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10rem 5rem 2rem;
+    margin: 8rem 0;
+    text-align: center;
+    clip-path: polygon(0 40%, 50% 0, 100% 40%, 100% 100%, 0 100%);
+    .copy a {
+        font-weight: bold;
+        text-decoration: underline;
+    }
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3rem;
+    width: 100%;
+    .logo {
+        width: 150px;
+        height: 150px;
+    }
+    .footer-title {
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 0.5rem 0;
+    }
+    .links-container {
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+        text-transform: uppercase;
+        .link {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    .footer-left {
+        width: 440px;
+        text-align: left;
+    }
+    .footer-centre {
+      text-align: center;
+      transform:translateY(-8rem);
+      padding-right: 8rem;
+    }
+    .footer-right {
+        text-align: right;
+    }
+}
