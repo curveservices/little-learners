@@ -1,0 +1,38 @@
+.flat-btn {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  text-align: center;
+  width: fit-content;
+  padding: 1rem 1.5rem;
+  margin-top: 0.5rem;
+  border-radius: 50px;
+  border: 3px solid var(--primary);
+  background: #ffff;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: var(--button-shadow);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-1px);
+    background: var(--footer);
+    color: #fff;
+    box-shadow: var(--box);
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 920px) {
+  button {
+    width: 150px;
+    font-size: 10px;
+    margin: 0;
+  }
+}
