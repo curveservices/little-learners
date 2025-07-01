@@ -2,7 +2,7 @@
 @import "slick-carousel/slick/slick-theme.css";
 
 .testimonial-container {
-  padding: 8rem 0 0; 
+  padding: 8rem 0 0;
   .text-box {
     align-content: center !important;
     padding-bottom: 4rem;
@@ -47,7 +47,7 @@
   border: none;
   color: var(--secondary);
   cursor: pointer;
-  font-weight:600;
+  font-weight: 600;
   margin-top: 15px;
   text-decoration: underline;
 
@@ -58,14 +58,14 @@
 
 .testimonial-modal {
   position: relative;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   padding: 2rem;
+  margin: 2rem 12rem;
   border-radius: 15px;
-  width: fit-content;
   outline: none;
   .text {
     padding: 0;
-    margin: 0;
+    margin: 0;overflow: scroll;
   }
 }
 
@@ -76,9 +76,6 @@
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.7);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   z-index: 1000;
 }
 
@@ -130,7 +127,7 @@
     padding: 0;
   }
   .testimonial {
-      padding: 1rem;
+    padding: 1rem;
     .job {
       margin-bottom: 0.25rem;
     }
@@ -138,11 +135,11 @@
       font-size: 12px;
     }
   }
-    .slick-slider {
-      .slick-dots {
-        bottom: -2.25rem;
-      }
+  .slick-slider {
+    .slick-dots {
+      bottom: -2.25rem;
     }
+  }
   .testimonial-modal {
     width: 400px;
   }
@@ -152,5 +149,4 @@
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  
 }
