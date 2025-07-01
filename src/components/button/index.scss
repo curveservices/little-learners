@@ -20,6 +20,7 @@
   &:hover {
     transform: translateY(-1px);
     background: var(--footer);
+    border-color: var(--footer);
     color: #fff;
     box-shadow: var(--box);
   }
