@@ -59,7 +59,7 @@ const Navbar = () => {
             </div>
           </NavLink>
           <NavLink
-            to="/about"
+            to="/about-us"
             className={({ isActive }) => (isActive ? "active" : "")}
             onClick={() => setShowNav(false)}
           >

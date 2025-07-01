@@ -1,205 +1,208 @@
 header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  color: #000;
+  font-family: "Nunito", sans-serif;
+  transition: all 2s ease;
+  cursor: pointer;
+
+  .logo {
+    width: 70px;
+    height: 70px;
+  }
+
+  .mobile-logo {
+    display: none;
+  }
+
+  nav {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
+    justify-content: center;
+    gap: 3rem;
     color: #000;
-    font-family: "Nunito", sans-serif;
-    transition: all 2s ease;
-    cursor: pointer;
 
-    .logo {
-        width: 70px;
-        height: 70px;
+    .active .menu-container {
+      border-bottom: 2px solid var(--primary);
     }
 
-    .mobile-logo {
-        display: none;
+    .text {
+      color: #000;
+      &:hover {
+        color: var(--primary);
+        transition: all 0.3s ease-in-out;
+      }
     }
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
 
-    nav {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 3rem;
+      .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: var(--footer);
+        padding: 0;
+        border-radius: 4px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        min-width: 150px;
+        overflow: hidden;
+        max-height: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition:
+          max-height 0.4s ease-in-out,
+          opacity 0.3s ease-in-out,
+          padding 0.3s ease-in-out;
+      }
+
+      &:hover .dropdown-menu,
+      .dropdown-menu:hover {
+        max-height: 500px;
+        opacity: 1;
+        visibility: visible;
+        padding: 10px 0;
+      }
+
+      a {
+        display: block;
+        padding: 10px 20px;
         color: #000;
+        text-decoration: none;
+        transition: background 0.1s;
 
-        .active .menu-container {
-            border-bottom: 2px solid var(--primary);
+        &.dropdown-item:hover {
+          background: var(--footer);
+          color: #000;
         }
-
-        .text {
-            color: #000;
-            &:hover {
-                color: var(--primary);
-                transition: all 0.3s ease-in-out;
-
-            }
-        }
-        .dropdown {
-            position: relative;
-            display: inline-block;
-            cursor: pointer;
-
-            .dropdown-menu {
-                position: absolute;
-                top: 100%;
-                left: 0;
-                background: var(--footer);
-                padding: 0;
-                border-radius: 4px;
-                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-                min-width: 150px;
-                overflow: hidden;
-                max-height: 0;
-                opacity: 0;
-                visibility: hidden;
-                transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out, padding 0.3s ease-in-out;
-            }
-
-            &:hover .dropdown-menu,
-            .dropdown-menu:hover {
-                max-height: 500px;
-                opacity: 1;
-                visibility: visible;
-                padding: 10px 0;
-            }
-
-            a {
-                display: block;
-                padding: 10px 20px;
-                color: #000;
-                text-decoration: none;
-                transition: background 0.1s;
-
-                &.dropdown-item:hover {
-                    background: var(--footer);
-                    color: #000;
-                }
-            }
-        }
+      }
     }
+  }
 }
 
 .navbar-scroll {
-    opacity: 1;
-    visibility: visible;
-    transition:
-        opacity 0.1s ease-in-out,
-        visibility 0.1s ease-in-out;
+  opacity: 1;
+  visibility: visible;
+  transition:
+    opacity 0.1s ease-in-out,
+    visibility 0.1s ease-in-out;
 }
 
 .navbar-hidden {
-    opacity: 0;
-    visibility: hidden;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .mobile-icon,
 .close-icon,
 .hamburger {
-    display: none;
+  display: none;
 }
 
 @media screen and (max-width: 1024px) {
-    header {
-        padding: 0rem 2rem;
+  header {
+    padding: 0rem 2rem;
 
-        .logo {
-            display: none;
-        }
-
-        .mobile-logo {
-            display: block;
-            width: 50px;
-            height: auto;
-            object-fit: contain;
-            padding-top: 5px;
-        }
-
-        nav {
-            display: none;
-        }
-
-        nav {
-            position: absolute;
-            top: 30%;
-            right: 0;
-            width: 100%;
-            background: var(--footer);
-            z-index: 9999;
-
-            .active {
-                border-bottom: none;
-            }
-
-            .desktop-icon {
-                display: none;
-            }
-
-            .mobile-icon {
-                display: block;
-                font-size: 25px;
-            }
-
-            &.mobile-show {
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-start;
-                align-items: flex-start;
-                gap: 2.5rem;
-                margin-top: 3rem;
-                padding: 3rem 5rem;
-                height: 120vh;
-                width: 100%;
-                animation: slideInRight 1.5s;
-
-                .active {
-                    border-bottom: none;
-                }
-
-                .text {
-                    font-size: 24px;
-                }
-
-                .menu-container {
-                    display: flex;
-                    align-items: center;
-                    gap: 40px;
-                    margin-top: 1rem;
-                    border-bottom: none;
-                }
-            }
-
-            .dropdown {
-                width: 100%;
-
-                .dropdown-menu {
-                    position: static;
-                    background: none;
-                    box-shadow: none;
-                    display: flex;
-                    flex-direction: column;
-                    opacity: 1;
-                    margin-left: 4rem;
-                    visibility: visible;
-                    max-height: none;
-                }
-
-                a {
-                    padding: 0;
-                }
-
-                .dropdown-item {
-                    padding: 0.5rem;
-                    text-align: left;
-                    width: 20%;
-                }
-            }
-        }
+    .logo {
+      display: none;
     }
 
-    header.menu-open {
-        background: var(--footer) !important;
-    } }
+    .mobile-logo {
+      display: block;
+      width: 50px;
+      height: auto;
+      object-fit: contain;
+      padding-top: 5px;
+    }
+
+    nav {
+      display: none;
+    }
+
+    nav {
+      position: absolute;
+      top: 30%;
+      right: 0;
+      width: 100%;
+      background: var(--footer);
+      z-index: 9999;
+
+      .active {
+        border-bottom: none;
+      }
+
+      .desktop-icon {
+        display: none;
+      }
+
+      .mobile-icon {
+        display: block;
+        font-size: 25px;
+      }
+
+      &.mobile-show {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 2.5rem;
+        margin-top: 3rem;
+        padding: 3rem 5rem;
+        height: 120vh;
+        width: 100%;
+        animation: slideInRight 1.5s;
+
+        .active {
+          border-bottom: none;
+        }
+
+        .text {
+          font-size: 24px;
+        }
+
+        .menu-container {
+          display: flex;
+          align-items: center;
+          gap: 40px;
+          margin-top: 1rem;
+          border-bottom: none;
+        }
+      }
+
+      .dropdown {
+        width: 100%;
+
+        .dropdown-menu {
+          position: static;
+          background: none;
+          box-shadow: none;
+          display: flex;
+          flex-direction: column;
+          opacity: 1;
+          margin-left: 4rem;
+          visibility: visible;
+          max-height: none;
+        }
+
+        a {
+          padding: 0;
+        }
+
+        .dropdown-item {
+          padding: 0.5rem;
+          text-align: left;
+          width: 20%;
+        }
+      }
+    }
+  }
+
+  header.menu-open {
+    background: var(--footer) !important;
+  }
+}
