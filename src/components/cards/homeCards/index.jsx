@@ -1,6 +1,6 @@
-import card1 from "../../assets/images/card1.webp";
-import card2 from "../../assets/images/card2.webp";
-import card3 from "../../assets/images/card3.webp";
+import card1 from "../../../assets/images/card1.webp";
+import card2 from "../../../assets/images/card2.webp";
+import card3 from "../../../assets/images/card3.webp";
 import "./index.scss";
 
 const Cards = (props) => {
@@ -13,9 +13,12 @@ const Cards = (props) => {
           className="card-image"
           loading="lazy"
         />
-        <h3 className="card-title">{props.card1Title || 'A Safe Happy Place'}</h3>
+        <h3 className="card-title">
+          {props.card1Title || "A Safe Happy Place"}
+        </h3>
         <p className="card-description">
-          {props.card1P || 'Where children will feel valued,  supported and listened to'}
+          {props.card1P ||
+            "Where children will feel valued,  supported and listened to"}
         </p>
       </div>
       <div className="card second-card">
@@ -25,7 +28,9 @@ const Cards = (props) => {
           className="card-image"
           loading="lazy"
         />
-        <h3 className="card-title">{props.card2Title || 'Somewhere To Flourish'}</h3>
+        <h3 className="card-title">
+          {props.card2Title || "Somewhere To Flourish"}
+        </h3>
         <p className="card-description">
           Children will gain confidence and begin a lifelong  passion for
           learning
@@ -38,13 +43,16 @@ const Cards = (props) => {
           className="card-image"
           loading="lazy"
         />
-        <h3 className="card-title">{props.card3Title || 'A Friendly, Magical Place'}</h3>
+        <h3 className="card-title">
+          {props.card3Title || "A Friendly, Magical Place"}
+        </h3>
         <p className="card-description">
-          {props.card3P || 'For little friends to meet and enjoy discovering new things together'}
+          {props.card3P ||
+            "For little friends to meet and enjoy discovering new things together"}
         </p>
       </div>
     </div>
   );
-}
+};
 
-export default Cards
+export default Cards;
