@@ -1,12 +1,13 @@
-import Button from '../button';
-import './index.scss';
+import Button from "../button";
+import "./index.scss";
 
-const CallToAction = ({title, p1, text1, link1, text2, link2}) => {
+const CallToAction = ({ title, p1, p2, text1, link1, text2, link2, display }) => {
   return (
     <div className="cta">
       <div className="cta-container">
-        <h2 className="cta-title">{title}</h2>
+        <h3 className="cta-title">{title}</h3>
         <p className="cta-p">{p1}</p>
+        <p className="cta-p">{ p2}</p>
       </div>
       <div className="btn-container">
         <Button
@@ -14,15 +15,16 @@ const CallToAction = ({title, p1, text1, link1, text2, link2}) => {
           link={link1}
           target="_blank"
           background="var(--secondary)"
-          color='#fff'
+          color="#fff"
         />
         <Button
           text={text2}
           link={link2}
+          display={display}
         />
       </div>
     </div>
   );
-}
+};
 
-export default CallToAction
+export default CallToAction;
