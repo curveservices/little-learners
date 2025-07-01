@@ -1,17 +1,17 @@
-import Button from '../../components/button';
-import home from '../../assets/images/home-hero.webp';
-import Cards from '../../components/cards';
-import body from '../../assets/images/hero-body.webp';
+import Button from "../../components/button";
+import home from "../../assets/images/home-hero.webp";
+import Cards from "../../components/cards/homeCards";
+import body from "../../assets/images/hero-body.webp";
 import TextAndImage from "../../components/blurImage";
-import home1 from '../../assets/images/home1.webp';
-import home2 from '../../assets/images/home2.webp';
-import CallToAction from '../../components/cta';
-import Testimonials from '../../components/testimonials';
-import useScrollStates from '../../components/scrollState';
+import home1 from "../../assets/images/home1.webp";
+import home2 from "../../assets/images/home2.webp";
+import CallToAction from "../../components/cta";
+import Testimonials from "../../components/testimonials";
+import useScrollStates from "../../components/scrollState";
 import "./index.scss";
 
 const Home = () => {
-  const {second, third, fourth, fith} = useScrollStates()
+  const { second, third, fourth, fith } = useScrollStates();
   return (
     <div className="home-page">
       <section className="hero">
@@ -103,6 +103,6 @@ const Home = () => {
       </section>
     </div>
   );
-}
+};
 
-export default Home
+export default Home;
