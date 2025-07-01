@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom';
-import logo from '../../assets/images/LL-favicon.svg';
-import './index.scss';
+import { Link } from "react-router-dom";
+import logo from "../../assets/images/LL-favicon.svg";
+import "./index.scss";
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -42,10 +42,18 @@ const Footer = () => {
           <div>info@littlelearnersplaygroup.com</div>
           <div className="footer-title">Navigation</div>
           <div className="links-container">
-            <Link to="/" className='link'>HOME</Link>
-            <Link to="/about-us" className='link'>ABOUT US</Link>
-            <Link to="learning-and-playing" className='link'>LEARNING AND PLAYING</Link>
-            <Link to="/gallery" className='link'>GALLERY</Link>
+            <Link to="/" className="link">
+              HOME
+            </Link>
+            <Link to="/about-us" className="link">
+              ABOUT US
+            </Link>
+            <Link to="learning-and-playing" className="link">
+              LEARNING AND PLAYING
+            </Link>
+            <Link to="/gallery" className="link">
+              GALLERY
+            </Link>
           </div>
         </div>
       </div>
