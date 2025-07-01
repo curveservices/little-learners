@@ -1,7 +1,6 @@
 import Button from "../button";
 import "./index.scss";
 
-
 const TextAndImage = ({
   subtitle,
   title,
