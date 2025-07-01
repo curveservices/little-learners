@@ -1,0 +1,40 @@
+.about-page {
+    padding-bottom: 0 !important;
+    .hero {
+        height: 77vh;
+        .about-image {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 600px;
+        }
+    }
+    .second-section {
+        .about-image {
+            position: absolute;
+            opacity: 0.4;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .fith-section,
+    .policy-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 4rem 0;
+        .about-image {
+            position: absolute;
+            opacity: 0.4;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+            height: 80vh;
+            object-fit: cover;
+            padding: 4rem 0;
+        }
+    }
+}
