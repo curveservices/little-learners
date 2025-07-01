@@ -1,6 +1,6 @@
 import "./index.scss";
 import notFound from "../../assets/images/404.webp";
-import Helmet from "../../components/helmet"
+import Helmet from "../../components/helmet";
 import Button from "../../components/button";
 
 const NotFound = () => {
@@ -8,7 +8,7 @@ const NotFound = () => {
     <>
       <div className="container">
         <h1>PAGE NOT FOUND</h1>
-        <Button text="Back home" link="/"  />
+        <Button text="Back home" link="/" />
         <img src={notFound} alt="page not found" />
       </div>
       <Helmet
