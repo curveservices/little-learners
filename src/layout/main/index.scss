@@ -1,111 +1,116 @@
 .app {
-    font-family: "Nunito", sans-serif;
-    font-display: swap;
-    .error-message {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 12rem 0;
-        font-size: 2rem;
+  font-family: "Nunito", sans-serif;
+  font-display: swap;
+  .error-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12rem 0;
+    font-size: 2rem;
+  }
+
+  .home-page,
+  .about-page,
+  .contact-page,
+  .gallery-page,
+  .learning-page,
+  .policy-page {
+    animation: fadeIn 1s backwards;
+    padding: 10rem 4rem;
+    h1 {
+      font-size: 4rem;
+      font-weight: 500;
+      margin: 0;
     }
-   
-    .home-page,
-    .about-page,
-    .contact-page,
-    .gallery-page,
-    .learning-page,
-    .policy-page {
-        animation: fadeIn 1s backwards;
-        padding: 10rem 4rem;
-        h1 {
-            font-size: 4rem;
-            font-weight: 500;
-            margin: 0;
-        }
-        h2 {
-            font-size: 3rem;
-            margin: 0;
-        }
-        h3 {
-            font-size: 2rem;
-            margin: 0;
-        }
-        p {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1.125rem;
-            margin: 0.5rem 0;
-        }
-        .subtitle {
-            display: flex;
-            align-items: center;
-            gap: 1.25rem;
-            font-family: 'Nunito', sans-serif;
-            font-size: 1rem;
-            font-weight: bold;
-            text-transform: uppercase;
-            color: var(--primary);
-            animation: fadeInUp 0.2s 0.5s backwards;
-        }
-        .indent {
-            width: 2em;
-            height: 2px;
-            background: var(--primary);
-            border-radius: 5px;
-        }
-        .text-box {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            gap: 0.5rem;
-            width: 50%;
-        }
-        .anim {
-            animation: fadeIn 1.5s forwards;
-            .cards-container {
-                .card {
-                    animation: fadeInUp 0.7s backwards;
-                }
-
-                @for $i from 1 through 10 {
-
-                    .card:nth-child(#{$i}) {
-                        animation-delay: #{0.4s + ($i * 0.2s)};
-                    }
-                }
-            }
-        }
-
-        .none {
-            opacity: 0;     
-        }
-        .hero {
-            .hero-image {
-                width: 100%;
-                height: auto;
-                object-fit: cover;
-            }
-        }
+    h2 {
+      font-size: 3rem;
+      margin: 0;
     }
+    h3 {
+      font-size: 2rem;
+      margin: 0;
+    }
+    p {
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.125rem;
+      margin: 0.5rem 0;
+    }
+    .subtitle {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      font-family: "Nunito", sans-serif;
+      font-size: 1rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: var(--primary);
+      animation: fadeInUp 0.2s 0.3s backwards;
+    }
+    .indent {
+      width: 2em;
+      height: 2px;
+      background: var(--primary);
+      border-radius: 5px;
+    }
+    .text-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      gap: 0.5rem;
+      width: 50%;
+    }
+    .anim {
+      animation: fadeIn 1.5s forwards;
+      .cards-container {
+        .card {
+          animation: fadeInUp 0.3s backwards;
+        }
+
+        @for $i from 1 through 10 {
+          .card:nth-child(#{$i}) {
+            animation-delay: #{0.3s + ($i * 0.2s)};
+          }
+        }
+      }
+    }
+    .none {
+      opacity: 0;
+    }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      .hero-image {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+  }
 }
 .back-to-top {
-    position: fixed;
-    bottom: 15rem;
-    right: 0;
-    font-size: 28px;
-    padding: 10px;
-    margin: 0;
-    background: var(--secondary);
-    border-radius: 20% 0% 0% 20%;
-    width: 50px;
-    height: 50px;
-    border: none;
-    box-shadow: var(--button-shadow);
-    cursor: pointer;
-    animation: fadeInRight 2s;
-    transition: all 1s ease-in-out;
+  position: fixed;
+  display: flex;
+  gap: 1rem;
+  bottom: 2rem;
+  left: 1rem;
+  padding: 10px;
+  margin: 0;
+  background: var(--primary);
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 15px ;
+  width: fit-content;
+  height: auto;
+  border: none;
+  box-shadow: var(--button-shadow);
+  z-index: 999;
+  cursor: pointer;
+  animation: fadeInUp 2s;
+  transition: all 0.3s ease-in-out;
 
-    &:hover {
-        background: #636363;
-        color: #fff;
-    }
+  &:hover {
+    background: var(--footer);
+    box-shadow: var(--box);
+    color: #fff;
+  }
 }

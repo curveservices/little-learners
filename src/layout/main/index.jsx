@@ -4,7 +4,7 @@ import { Outlet, ScrollRestoration } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import Footer from "../footer";
-import "./index.scss"; 
+import "./index.scss";
 import QuickLinksPanel from "../../components/quickLinks";
 
 const Layout = () => {
@@ -42,9 +42,11 @@ const Layout = () => {
             onClick={scrollToTop}
           >
             <FontAwesomeIcon icon={faArrowUp} />
+            Back to Top
           </button>
         </>
-      )};
+      )}
+      ;
       <QuickLinksPanel />
       <Footer />
       <ScrollRestoration />
