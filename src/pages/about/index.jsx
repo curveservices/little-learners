@@ -1,18 +1,18 @@
 import Button from "../../components/button";
-import TextAndImage from '../../components/blurImage';
-import hero from '../../assets/images/about-hero.webp';
-import about1 from '../../assets/images/sylwia.webp';
-import about2 from '../../assets/images/about2.webp';
-import about3 from '../../assets/images/about3.webp';
+import TextAndImage from "../../components/blurImage";
+import hero from "../../assets/images/about-hero.webp";
+import about1 from "../../assets/images/sylwia.webp";
+import about2 from "../../assets/images/about2.webp";
+import about3 from "../../assets/images/about3.webp";
 import about4 from "../../assets/images/about4.webp";
 import aboutBody from "../../assets/images/about-body.webp";
 import AboutCards from "../../components/cards/aboutCards";
-import './index.scss';
+import "./index.scss";
 import useScrollStates from "../../components/scrollState";
 import CallToAction from "../../components/cta";
 
 const About = () => {
-  const {second, third, fourth, fith} = useScrollStates();
+  const { second, third, fourth, fith } = useScrollStates();
   return (
     <div className="about-page">
       <section className="hero">

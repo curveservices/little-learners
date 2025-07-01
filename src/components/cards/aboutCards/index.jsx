@@ -1,15 +1,14 @@
-import house from '../../../assets/images/house.webp';
-import flower from '../../../assets/images/flower.webp';
-import cocoon from '../../../assets/images/silk-cocoon.webp';
-import world from '../../../assets/images/world.webp';
-import magic from '../../../assets/images/magic.webp';
-import './index.scss';
-
+import house from "../../../assets/images/house.webp";
+import flower from "../../../assets/images/flower.webp";
+import cocoon from "../../../assets/images/silk-cocoon.webp";
+import world from "../../../assets/images/world.webp";
+import magic from "../../../assets/images/magic.webp";
+import "./index.scss";
 
 const AboutCards = () => {
   return (
     <div className="card-container">
-      <div className="card" style={{border: "3px solid var(--primary)"}}>
+      <div className="card" style={{ border: "3px solid var(--primary)" }}>
         <img
           src={house}
           alt="home"
@@ -19,7 +18,7 @@ const AboutCards = () => {
         <h3 className="title">A Safe and Happy Place</h3>
         <p>Where children will feel valued, supported and listened to.</p>
       </div>
-      <div className="card" style={{border: "3px solid var(--secondary)"}}>
+      <div className="card" style={{ border: "3px solid var(--secondary)" }}>
         <img
           src={flower}
           alt="home"
@@ -32,7 +31,7 @@ const AboutCards = () => {
           learning.
         </p>
       </div>
-      <div className="card" style={{border: "3px solid #57C0B3"}}>
+      <div className="card" style={{ border: "3px solid #57C0B3" }}>
         <img
           src={cocoon}
           alt="home"
@@ -45,7 +44,7 @@ const AboutCards = () => {
           own pace.
         </p>
       </div>
-      <div className="card" style={{border: "3px solid #0AB7D5"}}>
+      <div className="card" style={{ border: "3px solid #0AB7D5" }}>
         <img
           src={world}
           alt="home"
@@ -58,8 +57,13 @@ const AboutCards = () => {
           in hand.
         </p>
       </div>
-      <div className="card" style={{border: "3px solid var(--primary)"}}>
-        <img src={magic} alt="home" className="card-icon" style={{background: 'var(--primary)'}} />
+      <div className="card" style={{ border: "3px solid var(--primary)" }}>
+        <img
+          src={magic}
+          alt="home"
+          className="card-icon"
+          style={{ background: "var(--primary)" }}
+        />
         <h3 className="title">A Friendly, Magical Place</h3>
         <p>
           For little friends to meet and enjoy discovering new things together.
@@ -67,6 +71,6 @@ const AboutCards = () => {
       </div>
     </div>
   );
-}
- 
-export default AboutCards
+};
+
+export default AboutCards;

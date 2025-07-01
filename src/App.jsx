@@ -28,29 +28,37 @@ const router = createBrowserRouter(
             </Suspense>
           }
         />
-        <Route path="/about-us" element={
-          <Suspense fallback={<LoadingSpinner />}>
-            <About />
-          </Suspense>
-        }
+        <Route
+          path="/about-us"
+          element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <About />
+            </Suspense>
+          }
         />
-        <Route path="/learning-and-playing" element={
+        <Route
+          path="/learning-and-playing"
+          element={
             <Suspense fallback={<LoadingSpinner />}>
               <LearninPlaying />
             </Suspense>
-        }
+          }
         />
-        <Route path="/gallery" element={
-          <Suspense fallback={<LoadingSpinner />}>
-            <Gallery />
-          </Suspense>
-        }
+        <Route
+          path="/gallery"
+          element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <Gallery />
+            </Suspense>
+          }
         />
-        <Route path="/contact-us" element={
-          <Suspense fallback={<LoadingSpinner />}>
-            <Contact />
-          </Suspense>
-        }
+        <Route
+          path="/contact-us"
+          element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <Contact />
+            </Suspense>
+          }
         />
       </Route>
       <Route
