@@ -5,6 +5,8 @@ import body from "../../assets/images/hero-body.webp";
 import TextAndImage from "../../components/blurImage";
 import home1 from "../../assets/images/home1.webp";
 import home2 from "../../assets/images/home2.webp";
+import messy from "../../assets/images/messy.webp";
+import funded from "../../assets/images/funded.webp";
 import CallToAction from "../../components/cta";
 import Testimonials from "../../components/testimonials";
 import useScrollStates from "../../components/scrollState";
@@ -18,7 +20,7 @@ const Home = () => {
         <div className="text-box">
           <div className="subtitle">
             <div className="indent"></div>
-            <div>Your Local Pre-School</div>
+            <div>Your Local Preschool</div>
           </div>
           <h1 className="main-title">Little Learners</h1>
           <p>
@@ -33,7 +35,7 @@ const Home = () => {
         </div>
         <img
           src={home}
-          alt="Little Learners Pre-School, Blackheath, Greenwich, London"
+          alt="Little Learners Preschool, Blackheath, Greenwich, London"
           className="hero-image"
           loading="lazy"
           style={{ paddingTop: "1rem" }}
@@ -43,7 +45,7 @@ const Home = () => {
         <div className="body-img-overlay">
           <img
             src={body}
-            alt="Little Learners Pre-school, Blackheath, London"
+            alt="Little Learners Preschool, Blackheath, London"
             className="body-img"
           />
         </div>
@@ -52,6 +54,37 @@ const Home = () => {
         </div>
       </section>
       <section className={`third-section ${third ? "anim" : "none"}`}>
+        <TextAndImage
+          subtitle="a taster to little learners"
+          title="Messy & Sensory Play"
+          p1="Get ready to squish, splash, and sparkle! Join us every Friday (term time) from 9:30 to 10:30 AM for Messy Play and Sensory Fun"
+          p2="Specially designed for curious little ones aged 12 months to 5 years. It’s the perfect hour of giggles, goo, and hands-on discovery for everyone especially for children that are too young to join our preschool."
+          p3="Contact us to find out more about our messy and sensory play sessions."
+          img={messy}
+          text="Contact us"
+          link="/contact-us"
+          reverse
+        />
+        <div className="banner">
+          <div className="text">
+            <h3 className="title">Free Funded Hours</h3>
+            <p>
+              Little Learners Preschool offers government-funded 15 and 30-hour
+              early education places for eligible children aged 2 to 4 years.
+            </p>
+            <p>
+              Funded sessions support children aged 2–3 and 3-4 year olds
+              (subject to eligibility criteria). Please contact us to find out
+              more and check your eligibility.
+            </p>
+            <Button text="contact us" />
+          </div>
+          <img
+            src={funded}
+            alt="Little Learners preschool in Blackheath Lee, London"
+            className="banner-img"
+          />
+        </div>
         <TextAndImage
           subtitle="Teaching & Learning"
           title="Our Sessions"
@@ -70,6 +103,7 @@ const Home = () => {
           text="Find out about us"
           link="/about-us"
           img={home1}
+          reverse
         />
         <TextAndImage
           subtitle="Careful Planning"
@@ -80,7 +114,6 @@ const Home = () => {
           text="Playing & Learning"
           link="/playing-and-learning"
           img={home2}
-          reverse
         />
       </section>
       <CallToAction
@@ -95,7 +128,7 @@ const Home = () => {
         <div className="body-img-overlay">
           <img
             src={body}
-            alt="Little Learners Pre-school, Blackheath, London"
+            alt="Little Learners Preschool, Blackheath, London"
             className="body-img"
           />
         </div>
