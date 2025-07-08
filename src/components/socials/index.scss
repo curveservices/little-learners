@@ -2,24 +2,27 @@
   display: flex;
   justify-content: center;
   gap: 1em;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   list-style: none;
   text-align: center;
   margin: 0;
-  animation: fadeInUp 1s 1.5s backwards;
 }
 .icons {
+  svg {
+    color: var(--primary);
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      color: var(--secondary);
+      transform: scale(1.1);
+      
+    }
+  }
   a {
     padding: 8px;
     display: block;
     font-size: 32px;
     line-height: 20px;
     cursor: pointer;
-    &:hover svg {
-      color: #fff;
-      transform: scale(1.2);
-      transition: all 0.5s ease-in-out;
-    }
   }
 }
 @media screen and (max-width: 768px) {
