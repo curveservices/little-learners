@@ -12,9 +12,10 @@ import Home from "./pages/home/index.jsx";
 
 import "./App.scss";
 import About from "./pages/about/index.jsx";
-import LearninPlaying from "./pages/learning/index.jsx";
-import Gallery from "./pages/gallery/index.jsx";
+import LearningPlaying from "./pages/learning/index.jsx";
+import GalleryPage from "./pages/gallery/index.jsx";
 import Contact from "./pages/contact/index.jsx";
+import Policies from "./pages/index.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -40,7 +41,7 @@ const router = createBrowserRouter(
           path="/learning-and-playing"
           element={
             <Suspense fallback={<LoadingSpinner />}>
-              <LearninPlaying />
+              <LearningPlaying />
             </Suspense>
           }
         />
@@ -48,7 +49,7 @@ const router = createBrowserRouter(
           path="/gallery"
           element={
             <Suspense fallback={<LoadingSpinner />}>
-              <Gallery />
+              <GalleryPage />
             </Suspense>
           }
         />
@@ -57,6 +58,14 @@ const router = createBrowserRouter(
           element={
             <Suspense fallback={<LoadingSpinner />}>
               <Contact />
+            </Suspense>
+          }
+        />
+        <Route 
+          path="/policies-and-procedures"
+          element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <Policies/>
             </Suspense>
           }
         />
