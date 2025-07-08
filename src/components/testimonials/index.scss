@@ -17,29 +17,25 @@
   overflow: hidden;
   text-align: left;
   color: #000;
-  background: #fff;
+  background: #ffffff;
   border: 3px solid var(--border);
   padding: 2rem 3rem;
   border-radius: 15px;
-
+  
   .text {
     padding-top: 1rem;
   }
 }
 .text-container {
   position: relative;
-  overflow: hidden;
   max-height: 260px;
-}
-.text-container::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 5rem;
-  width: 100%;
-  background: linear-gradient(to top, #fff, transparent);
-  pointer-events: none;
+  .text {
+    display: -webkit-box;
+    line-clamp: 10; // Adjust the number of visible lines
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 
 .read-more-btn {
@@ -59,14 +55,37 @@
 .testimonial-modal {
   position: relative;
   font-family: "Montserrat", sans-serif;
+  
   padding: 2rem;
-  margin: 2rem 12rem;
+  margin: 4rem 12rem;
   border-radius: 15px;
   outline: none;
+  .testimonial {
+    border: 4px solid var(--primary);
+    box-shadow: var(--button-shadow);
+    gap: 2rem;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 980px;
+      height: 390px;
+      top: 2.5rem;
+      left: 4%;
+      background-image: url("../../assets/images/about-body.webp");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      opacity: 0.4; 
+      z-index: 0;
+      border-radius: 15px;
+    }
+  }
   .text {
+    font-weight: bold;
     padding: 0;
     margin: 0;
     overflow: scroll;
+    z-index: 1;
   }
 }
 
@@ -76,13 +95,17 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7);
+  background: #8889d2b3;
   z-index: 1000;
 }
 
 .close-modal-btn {
+  position: absolute;
+  right: 4rem;
+  top: 4rem;
+  z-index: 1;
   background: transparent;
-  color: #fff;
+  color: #000;
   border: none;
   font-size: 1.2rem;
   cursor: pointer;
