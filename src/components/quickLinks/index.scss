@@ -7,7 +7,7 @@
   align-items: flex-start;
   border-radius: 40px 0 0 15px;
   font-family: "Nunito", sans-serif;
-  box-shadow: var(--box);
+  box-shadow: var(--button-shadow);
   background: var(--primary);
 
   .quick-links-wrapper {
@@ -34,7 +34,8 @@
       z-index: 2;
       transition: all 0.3s ease-in-out;
       &:hover {
-        background: var(--footer);
+        background: var(--secondary);
+        box-shadow: var(--box);
       }
     }
 

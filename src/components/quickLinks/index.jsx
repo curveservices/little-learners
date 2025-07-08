@@ -9,7 +9,10 @@ const QuickLinksPanel = () => {
   const links = [
     { path: "/policies-and-procedures", label: "Policies and Procedures" },
     { path: "/terms-and-conditions", label: "Terms and Conditions" },
-    { path: "/aplication-form", label: "Application to Join" },
+    {
+      path: "/Application_to_Join_April_2018.doc",
+      label: "Application to Join",
+    },
     { path: "/contact-us", label: "Contact Us" },
   ];
 
