@@ -25,10 +25,10 @@ const Footer = () => {
           />
           <div className="footer-title">LITTLE LEARNERS PRE-SCHOOL</div>
           <div className="links-container">
-            <Link to="/" className="link">
+            <Link to="/policies-and-procedures" className="link">
               Policies and Procedures
             </Link>
-            <Link to="/" className="link">
+            <Link to="/Application_to_Join_April_2018.doc" className="link">
               Aplication to Join
             </Link>
             <Link to="/" className="link">
