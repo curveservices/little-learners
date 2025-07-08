@@ -1,5 +1,5 @@
 import card1 from "../../../assets/images/card1.webp";
-import card2 from "../../../assets/images/card2.webp";
+import card2 from "../../../assets/images/hero-body.webp";
 import card3 from "../../../assets/images/card3.webp";
 import "./index.scss";
 
