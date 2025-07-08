@@ -1,0 +1,19 @@
+.gallery-page {
+    .hero {
+        height: 77vh;
+        .gallery-hero-image {
+            position: absolute;
+            right: 2rem;
+            bottom: 0;
+            width: 475px;
+            object-fit: cover;
+            transform: rotateY(180deg);
+        }
+    }
+    .second-section {
+        padding: 8rem 0 2rem;
+    }
+    .third-section {
+        padding: 6rem 0 4rem;
+    }
+}
