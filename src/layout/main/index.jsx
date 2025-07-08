@@ -9,11 +9,10 @@ import QuickLinksPanel from "../../components/quickLinks";
 
 const Layout = () => {
   const [showButton, setShowButton] = useState(false);
-  const [isQuickLinksOpen, setIsQuickLinksOpen] = useState(false);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 300) {
         setShowButton(true);
       } else {
         setShowButton(false);

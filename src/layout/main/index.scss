@@ -8,15 +8,14 @@
     padding: 12rem 0;
     font-size: 2rem;
   }
-
   .home-page,
   .about-page,
   .contact-page,
   .gallery-page,
   .learning-page,
   .policy-page {
-    animation: fadeIn 1s backwards;
     padding: 10rem 4rem;
+    
     h1 {
       font-size: 4rem;
       font-weight: 500;
@@ -40,14 +39,14 @@
       align-items: center;
       gap: 1.25rem;
       font-family: "Nunito", sans-serif;
-      font-size: 1rem;
+      font-size: 20px;
       font-weight: bold;
       text-transform: uppercase;
       color: var(--primary);
       animation: fadeInUp 0.2s 0.3s backwards;
     }
     .indent {
-      width: 2em;
+      width: 2rem;
       height: 2px;
       background: var(--primary);
       border-radius: 5px;
@@ -63,12 +62,12 @@
       animation: fadeIn 1.5s forwards;
       .cards-container {
         .card {
-          animation: fadeInUp 0.3s backwards;
+          animation: fadeInUp 0.6s backwards;
         }
 
         @for $i from 1 through 10 {
           .card:nth-child(#{$i}) {
-            animation-delay: #{0.3s + ($i * 0.2s)};
+            animation-delay: #{0.4s + ($i * 0.2s)};
           }
         }
       }
@@ -79,6 +78,7 @@
     .hero {
       display: flex;
       flex-direction: column;
+      animation: fadeIn 0.5s forwards;
       .hero-image {
         width: 100%;
         height: auto;
@@ -112,5 +112,77 @@
     background: var(--footer);
     box-shadow: var(--box);
     color: #fff;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .app {
+    .home-page,
+    .about-page,
+    .contact-page,
+    .gallery-page,
+    .learning-page,
+    .policy-page {
+      padding: 8rem 2rem;
+
+      h1 {
+        font-size: 40px;
+      }
+
+      h2 {
+        font-size: 32px;
+      }
+
+      h3 {
+        font-size: 18px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+
+      .subtitle {
+        font-size: 16px;
+      }
+
+      .indent {
+        width: 1rem;
+        height: 2px;
+        background: var(--primary);
+        border-radius: 5px;
+      }
+
+      .text-box {
+        width: 100%;
+      }
+    }
+  }
+
+  .back-to-top {
+    position: fixed;
+    display: flex;
+    gap: 1rem;
+    bottom: 2rem;
+    left: 1rem;
+    padding: 10px;
+    margin: 0;
+    background: var(--primary);
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 15px;
+    width: fit-content;
+    height: auto;
+    border: none;
+    box-shadow: var(--button-shadow);
+    z-index: 999;
+    cursor: pointer;
+    animation: fadeInUp 2s;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background: var(--footer);
+      box-shadow: var(--box);
+      color: #fff;
+    } 
   }
 }
