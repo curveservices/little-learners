@@ -5,7 +5,6 @@
   justify-content: center;
   position: relative;
   padding: 4rem 0;
-
   .card {
     background: #fff;
     border-radius: 15px;
@@ -13,11 +12,12 @@
     padding: 1rem;
     width: 300px;
     text-align: center;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-in-out;
     cursor: pointer;
 
     &:hover {
       box-shadow: var(--box);
+      transform: scale(1.01);
     }
     .card-icon {
       width: 75px;
