@@ -19,13 +19,13 @@ const About = () => {
         <div className="text-box">
           <div className="subtitle">
             <div className="indent"></div>
-            About Us
+            About Little Learners
           </div>
           <h1 className="main-title">Sylwia and the Team</h1>
           <p>
-            Little Learners is a drop-off pre-school in Blackheath/Lee,
-            welcoming children aged 2 to 4. We provide a smooth, nurturing start
-            to early education.
+            Little Learners is a preschool in Blackheath/Lee, welcoming children
+            aged 2 to 4. We provide a smooth, nurturing start to early
+            education.
           </p>
           <div className="btn-container">
             <Button text="Contact us" link="/contact-us" />
@@ -35,19 +35,21 @@ const About = () => {
           src={hero}
           alt="Little Learners preschool, nursey in Blackheath, London"
           className="about-image"
+          loading="lazy"
         />
       </section>
       <section className={`second-section ${second ? "anim" : "none"}`}>
-        <img src={aboutBody} alt="" className="about-image" />
+        <img src={aboutBody} alt="" className="about-body" />
         <AboutCards />
       </section>
       <section className={`third-section ${third ? "anim" : "none"}`}>
         <TextAndImage
-          subtitle="our story"
-          title="About Sylwia"
-          p1=" Lorem ipsum dolor sit amet consectetur. Aliquet amet adipiscing at dignissim quis feugiat risus venenatis orci. Adipiscing aliquet aliquet leo sagittis hendrerit ultrices."
-          p2="Lorem ipsum dolor sit amet consectetur. Neque vulputate duis a est dis velit. Imperdiet eget viverra erat cursus consequat hendrerit neque pellentesque fermentum."
-          p3="Lorem ipsum dolor sit amet consectetur. Neque vulputate duis a est dis velit. Imperdiet eget viverra erat cursus consequat hendrerit neque pellentesque fermentum."
+          subtitle="Meet the Founder"
+          title="Sylwia Ferreday"
+          p1="Sylwia Ferreday is the heart behind Little Learners Preschool. A qualified primary and secondary school teacher with over 10 years of experience, Sylwia founded Little Learners to offer children aged 2–4 a safe, joyful, and enriching start to their learning journey."
+          p2="A firm believer in play-based learning rooted in the Early Years Foundation Stage (EYFS), Sylwia brings together professional expertise and genuine warmth. As a mum to a teenager, she understands the trust families place in early years educators—and she builds that trust every day through close parent partnerships, calm leadership, and personalised care."
+          p3="Outside the preschool, Sylwia is a woman of many passions. She’s a 1st Dan black belt in Kyokushinkai Karate, an avid reader, a regular runner, and a devoted dog lover. These interests reflect her calm focus, sense of discipline, and joy in movement and discovery—qualities she also nurtures in the children she teaches."
+          p4="At Little Learners, Sylwia creates more than just a setting. She creates a community—one where curiosity is celebrated, friendships blossom, and children grow with confidence."
           text="Apply to Join"
           link="/"
           img={about1}
@@ -62,16 +64,22 @@ const About = () => {
           link="/paying-and-learning"
           img={about2}
         />
-        <div className="policy-section">
-          <img src={aboutBody} alt="" className="about-image" />
-          <CallToAction
-            title="Our Policies and Procedures"
-            p1="Download and view our documents here"
-            text1="Policies & Procedures"
-            link1="/"
-            display="none"
-          />
-        </div>
+      </section>
+      <section className="policy-section">
+        <img
+          src={aboutBody}
+          alt="Little Learners preschool"
+          className="about-body"
+        />
+        <CallToAction
+          title="Our Policies and Procedures"
+          p1="Download and view our documents here"
+          text1="Policies & Procedures"
+          link1="/"
+          display="none"
+        />
+      </section>
+      <section className="fourth-section">
         <TextAndImage
           subtitle="Teaching & learning"
           title="Our Ethos"
@@ -94,7 +102,11 @@ const About = () => {
         />
       </section>
       <section className={`fith-section ${fith}`}>
-        <img src={aboutBody} alt="" className="about-image" />
+        <img
+          src={aboutBody}
+          alt="Little Learners preschool"
+          className="about-body"
+        />
         <CallToAction
           title="Progress Updates"
           p1="We provide written progress checks for two-year-olds, highlighting development in key learning areas like communication, creativity, and overall growth."

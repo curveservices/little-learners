@@ -10,12 +10,14 @@
     }
   }
   .second-section {
-    .about-image {
+    .about-body {
       position: absolute;
       opacity: 0.4;
+      width: 100vw;
       left: 0;
+      right: 0;
+      margin-left: calc(-50vw + 50%);
       z-index: -1;
-      width: 100%;
       height: 100%;
       object-fit: cover;
     }
@@ -26,7 +28,7 @@
     flex-direction: column;
     justify-content: center;
     margin: 4rem 0;
-    .about-image {
+    .about-body {
       position: absolute;
       opacity: 0.4;
       left: 0;
