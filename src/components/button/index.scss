@@ -30,10 +30,9 @@ a {
   text-decoration: none;
 }
 
-@media screen and (max-width: 920px) {
-  button {
-    width: 150px;
-    font-size: 10px;
+@media screen and (max-width: 768px) {
+  .flat-btn {
+    font-size: 14px;
     margin: 0;
   }
 }
