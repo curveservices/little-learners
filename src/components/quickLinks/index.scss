@@ -63,3 +63,19 @@
     }
   }
 }
+@media screen and (max-width: 768px) {
+  .quick-links-tab {
+    top: 10rem;
+    .quick-links-wrapper {
+      .toggle-tab {
+        width: 30px;
+        height: 200px;
+        font-size: 18px;
+        &:hover {
+          background: var(--primary);
+          box-shadow: var(--box);
+        }
+      }
+    } 
+  }
+}
