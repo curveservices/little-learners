@@ -17,3 +17,22 @@
         padding: 6rem 0 4rem;
     }
 }
+@media screen and (max-width: 768px) {
+    .gallery-page {
+        .hero {
+            .gallery-hero-image {
+                right: 0rem;
+                bottom: 0;
+                width: 375px;
+            }
+        }
+
+        .second-section {
+            padding: 4rem 0 2rem;
+        }
+
+        .third-section {
+            padding: 4rem 0 4rem;
+        }   
+    }
+}
