@@ -22,11 +22,11 @@ const LearningPlaying = () => {
         schemaMarkup={{
           "@context": "https://schema.org",
           "@type": "Preschool",
-          "name": "Little Learners Preschool",
-          "description":
+          name: "Little Learners Preschool",
+          description:
             "Little Learners offers a balanced curriculum combining structured play and personalised learning for preschool children aged 2–4.",
-          "educationalLevel": "Preschool",
-          "url": "https://www.littlelearnersplaygroup.com/learning-and-playing",
+          educationalLevel: "Preschool",
+          url: "https://www.littlelearnersplaygroup.com/learning-and-playing",
         }}
       />
       <div className="learning-page">
@@ -101,6 +101,37 @@ const LearningPlaying = () => {
               day to day
             </div>
             <h2>Daily Timetable</h2>
+            <p>
+              We have created our own curriculum to expose the children to as
+              many learning opportunities as possible and to enhance the
+              following:
+            </p>
+          </div>
+          <div className="unordered-list">
+            <ul>
+              <li>Phonics and communication &amp; language</li>
+              <li>Early Years Maths</li>
+              <li>Yoga &amp; Movement</li>
+              <li>Music</li>
+              <li>PE and Games</li>
+              <li>British Sign language BSL</li>
+              <li>
+                Early years writing session and Communication &amp; Language,
+                Phonics
+              </li>
+            </ul>
+            <ul>
+              <li>Maths Games</li>
+              <li>
+                Activities to extend children's learning about understanding the
+                world and personal, social &amp; emotional development, learning
+                to take in turns.
+              </li>
+              <li>Expressive art and design</li>
+              <li>Messy Play activities</li>
+              <li>Board games</li>
+              <li>Library</li>
+            </ul>
           </div>
           <div className="timetable">
             <div className="morning">

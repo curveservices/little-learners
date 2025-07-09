@@ -14,14 +14,25 @@
 
     .third-section {
         display: flex;
-        gap: 4rem;
+        gap: 3rem;
     }
     .fourth-section {
         margin-bottom: 6rem;
     }
     .fith-section {
         .text-box {
-            padding: 4rem 0;
+            padding: 2rem 0 0;
+        }
+        .unordered-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4rem;
+            padding: 0 2rem 1rem;
+            font-weight: 600;
+            ul {
+                width: 50%;
+                list-style: none;
+            }
         }
         .about-image {
             position: absolute;
@@ -35,10 +46,8 @@
         .timetable {
             display: flex;
             flex-wrap: wrap;
-            gap: 2rem;
-            align-items: flex-end;
+            gap: 3rem;
             justify-content: center;
-            z-index: 1;
             .morning {
                 max-width: 600px;
                 transition: all 0.3s ease-in-out;
@@ -49,7 +58,7 @@
             }
             .afternoon {
                 width: 400px;
-                margin-bottom: 4rem;
+                margin-bottom: 6rem;
                 transition: all 0.3s ease-in-out;
                 &:hover {
                     transform: scale(1.01);
@@ -65,12 +74,10 @@
                 cursor: pointer;
                 ul {
                     list-style: none;
-                    width: 80%;
                     margin: 0;
                     padding: 1rem;
                     li {
                         margin-bottom: 1rem;
-                        line-height: 1.5;
                     }
                 }
             }
@@ -96,11 +103,20 @@
         }
 
         .fith-section {
-
+            .unordered-list {
+                gap: 0rem;
+                padding: 0 1rem 1rem;
+        
+                ul {
+                    width: 100%;
+                    list-style: initial;
+                }   
+            }
             .about-image {
                 position: absolute;
                 left: 0;
                 width: 100%;
+                height: 100vh;
                 opacity: 0.4;
                 z-index: -1;
                 object-fit: cover;
