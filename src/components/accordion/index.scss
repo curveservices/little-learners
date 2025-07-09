@@ -5,9 +5,6 @@
 .accordion-right {
     width: 100%;
     padding: 0 2rem;
-    .accordion-title {
-        margin: 2rem !important;   
-    }
     .accordion-header {
         background: var(--secondary);
     }
@@ -15,9 +12,6 @@
 .accordion-left {
     width: 100%;
     padding: 0 2rem;
-    .accordion-title {
-        margin: 2rem !important;   
-    }
     .accordion-header {
         background: var(--primary);
     }
@@ -78,6 +72,26 @@
 @media screen and (max-width: 768px) {
     .accordion-container {
         flex-direction: column;
+    }
+    .accordion {
+        .accordion-header {
+            font-size: 14px;
+        }
+        .accordion-body {
+            padding: 1rem;
+
+            ul {
+                padding: 0 1rem;
+
+                li {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .icon {
+            font-size: 1.25rem;
+        }
     }
 }
 
