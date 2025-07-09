@@ -22,11 +22,9 @@ const CallToAction = ({
         <Button
           text={text1}
           link={link1}
-          target="_blank"
           background="var(--secondary)"
           color="#fff"
         />
-        <Button text={text2} link={link2} display={display} />
       </div>
     </div>
   );
