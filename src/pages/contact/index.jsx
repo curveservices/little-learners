@@ -7,7 +7,7 @@ import "./index.scss";
 const Contact = () => {
   return (
     <div className="contact-page">
-      <section className="hero text-box">
+      <section className="text-box">
         <div className="subtitle">
           <div className="indent"></div>
           get in touch

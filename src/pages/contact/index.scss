@@ -1,9 +1,9 @@
 .contact-page {
     display: flex;
-    justify-content: space-between;
+    gap: 4rem;
     padding-bottom: 0 !important;
     .contact-form {
-        width: 90%;
+        width: 100%;
         animation: fadeIn 0.3s forwards;
 
         .form-group {
@@ -107,7 +107,7 @@
     background: rgba(9, 252, 216, 0.2);
     float: right;
     width: 50%;
-    height: 100%;
+    height: auto;
     animation: backInRight 1s 0.3s forwards;
     opacity: 0;
 }
@@ -121,13 +121,8 @@
 @media screen and (max-width: 768px) {
     .contact-page {
         flex-direction: column;
+        gap: 0;
         margin: 0rem;
-
-        .text-box {
-            margin: 3rem 0 4rem;
-            width: 100%;
-            padding: 0 2rem;
-        }
 
         .info-map {
             display: none;
