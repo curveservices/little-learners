@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="footer-title">OPENING HOURS</div>
           <div>Monday to Friday: 9:30am - 2:30pm</div>
           <div>During term time</div>
-          <div className="footer-title">PRE-SCHOOL LOCATION</div>
+          <div className="footer-title">PRESCHOOL LOCATION</div>
           <div>Brandram Road Community Centre, </div>
           <div>25-33 Brandram Road,</div>
           <div>London,</div>
@@ -23,7 +23,7 @@ const Footer = () => {
             alt="Little Learners Preschool in Blackheath, London"
             className="logo"
           />
-          <div className="footer-title">LITTLE LEARNERS PRE-SCHOOL</div>
+          <div className="footer-title">LITTLE LEARNERS PRESCHOOL</div>
           <div className="links-container">
             <Link to="/policies-and-procedures" className="link">
               Policies and Procedures
