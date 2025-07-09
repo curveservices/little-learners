@@ -7,8 +7,8 @@
       overflow: hidden;
       transition: all 0.5s ease;
         &:hover {
-          transform: scale(1.5);
-          padding: 1rem 3rem 1rem 0rem;
+          transform: scale(1.4);
+          padding: 1rem 2rem 1rem 0rem;
         }
     }
   }
@@ -56,6 +56,14 @@
    
 
   @media screen and (max-width: 768px) {
+    .flip {
+        img.blur-img {
+          &:hover {
+            transform: scale(1);
+            padding: initial;
+          }
+        } 
+      }
     .text-image-wrapper {
       display: flex;
       flex-wrap: wrap;
