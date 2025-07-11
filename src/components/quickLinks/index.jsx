@@ -8,8 +8,16 @@ const QuickLinksPanel = () => {
 
   // Add a flag to distinguish internal route vs static file links
   const links = [
-    { path: "/policies-and-procedures", label: "Policies and Procedures", internal: true },
-    { path: "/terms-and-conditions", label: "Terms and Conditions", internal: true },
+    {
+      path: "/policies-and-procedures",
+      label: "Policies and Procedures",
+      internal: true,
+    },
+    {
+      path: "/Childcare_Terms_and_Conditions_April_2018.doc",
+      label: "Terms and Conditions",
+      internal: false,
+    },
     {
       path: "/Application_to_Join_April_2018.doc",
       label: "Application to Join",
