@@ -28,12 +28,16 @@ const Footer = () => {
             <Link to="/policies-and-procedures" className="link">
               Policies and Procedures
             </Link>
-            <Link to="/Application_to_Join_April_2018.doc" className="link">
+            <a href="/Application_to_Join_April_2018.doc" className="link" download>
               Aplication to Join
-            </Link>
-            <Link to="/" className="link">
+            </a>
+            <a
+              href="/Childcare_Terms_and_Conditions_April_2018.doc"
+              download
+              className="link"
+            >
               Terms and Conditions
-            </Link>
+            </a>
           </div>
         </div>
         <div className="footer-right">
