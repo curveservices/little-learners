@@ -16,4 +16,4 @@ const Policies = () => {
   )
 }
 
-export default Policies
+export default Policies;
