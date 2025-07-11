@@ -9,7 +9,7 @@ import QuickLinksPanel from "../../components/quickLinks";
 
 const Layout = () => {
   const [showButton, setShowButton] = useState(false);
-
+  const [showFooter, setShowFooter] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 300) {
@@ -17,6 +17,8 @@ const Layout = () => {
       } else {
         setShowButton(false);
       }
+      const timeout = setTimeout(() => setShowFooter(true), 100);
+      return () => clearTimeout(timeout);
     });
   }, []);
   const scrollToTop = () => {
@@ -47,7 +49,7 @@ const Layout = () => {
       )}
       ;
       <QuickLinksPanel />
-      <Footer />
+      {showFooter && <Footer />}
       <ScrollRestoration />
     </>
   );
