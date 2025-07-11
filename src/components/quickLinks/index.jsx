@@ -6,14 +6,16 @@ import "./index.scss";
 const QuickLinksPanel = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  // Add a flag to distinguish internal route vs static file links
   const links = [
-    { path: "/policies-and-procedures", label: "Policies and Procedures" },
-    { path: "/terms-and-conditions", label: "Terms and Conditions" },
+    { path: "/policies-and-procedures", label: "Policies and Procedures", internal: true },
+    { path: "/terms-and-conditions", label: "Terms and Conditions", internal: true },
     {
       path: "/Application_to_Join_April_2018.doc",
       label: "Application to Join",
+      internal: false,
     },
-    { path: "/contact-us", label: "Contact Us" },
+    { path: "/contact-us", label: "Contact Us", internal: true },
   ];
 
   return (
@@ -33,15 +35,28 @@ const QuickLinksPanel = () => {
               transition={{ duration: 0.6, ease: "easeInOut" }}
               className="quick-links-content"
             >
-              {links.map((link) => (
-                <NavLink
-                  key={link.path}
-                  to={link.path}
-                  onClick={() => setIsOpen(false)}
-                >
-                  <div className="text">{link.label}</div>
-                </NavLink>
-              ))}
+              {links.map(({ path, label, internal }) =>
+                internal ? (
+                  <NavLink
+                    key={path}
+                    to={path}
+                    onClick={() => setIsOpen(false)}
+                  >
+                    <div className="text">{label}</div>
+                  </NavLink>
+                ) : (
+                  <a
+                    key={path}
+                    href={path}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setIsOpen(false)}
+                    download
+                  >
+                    <div className="text">{label}</div>
+                  </a>
+                )
+              )}
             </motion.div>
           )}
         </AnimatePresence>
@@ -51,3 +66,4 @@ const QuickLinksPanel = () => {
 };
 
 export default QuickLinksPanel;
+
