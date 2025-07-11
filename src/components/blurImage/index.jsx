@@ -14,6 +14,8 @@ const TextAndImage = ({
   display = true,
   reverse = false,
   flip = false,
+  isInternal = true,
+  download = false, 
 }) => {
   return (
     <div
@@ -31,7 +33,12 @@ const TextAndImage = ({
         <p>{p4}</p>
         {display && (
           <div className="btn-container">
-            <Button text={text} link={link} />
+            <Button
+              text={text}
+              link={link}
+              isInternal={isInternal}
+              download={download}
+            />
           </div>
         )}
       </div>
