@@ -41,7 +41,7 @@ const TestimonialCard = ({ testimonial }) => {
         overlayClassName="modal-overlay"
       >
         <button onClick={closeModal} className="close-modal-btn">
-          <FontAwesomeIcon icon={faClose} size="x1" />
+          <FontAwesomeIcon icon={faClose} size="1x" />
         </button>
         <div className="testimonial">
           <h3 className="name subtitle">{testimonial.name}</h3>
