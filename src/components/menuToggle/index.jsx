@@ -16,7 +16,6 @@ const MenuToggle = ({ showNav, setShowNav }) => {
       >
         <FontAwesomeIcon
           icon={showNav ? faTimes : faBars}
-          size="x2"
           color="black"
         />
       </motion.div>
