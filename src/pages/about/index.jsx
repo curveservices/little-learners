@@ -17,21 +17,22 @@ const About = () => {
   return (
     <>
       <Helmet
-       title="About Us | Little Learners Preschool in Blackheath, London"
-       description="Meet Sylwia and the team at Little Learners Preschool. Learn more about our ethos, leadership, and what makes our nurturing environment so special for children aged 2–4."
-       keywords="About Little Learners, preschool staff, Blackheath nursery, early years education, meet the team"
-       schemaMarkup={{
-         "@context": "https://schema.org",
-         "@type": "Preschool",
-         "name": "Little Learners Preschool",
-         "description": "A nurturing and safe preschool in Blackheath, London, led by qualified educators offering high-quality early years education for 2-4 year olds.",
-         "address": {
-           "@type": "PostalAddress",
-           "streetAddress": "25-33 Brandram Road",
-           "addressLocality": "London",
-           "postalCode": "SE13 5RT",
-           "addressCountry": "UK"
-         }
+        title="About Us | Little Learners Preschool in Blackheath, London"
+        description="Meet Sylwia and the team at Little Learners Preschool. Learn more about our ethos, leadership, and what makes our nurturing environment so special for children aged 2–4."
+        keywords="About Little Learners, preschool staff, Blackheath nursery, early years education, meet the team"
+        schemaMarkup={{
+          "@context": "https://schema.org",
+          "@type": "Preschool",
+          name: "Little Learners Preschool",
+          description:
+            "A nurturing and safe preschool in Blackheath, London, led by qualified educators offering high-quality early years education for 2-4 year olds.",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "25-33 Brandram Road",
+            addressLocality: "London",
+            postalCode: "SE13 5RT",
+            addressCountry: "UK",
+          },
         }}
       />
       <div className="about-page">
@@ -71,7 +72,9 @@ const About = () => {
             p3="Outside the preschool, Sylwia is a woman of many passions. She’s a 1st Dan black belt in Kyokushinkai Karate, an avid reader, a regular runner, and a devoted dog lover. These interests reflect her calm focus, sense of discipline, and joy in movement and discovery—qualities she also nurtures in the children she teaches."
             p4="At Little Learners, Sylwia creates more than just a setting. She creates a community—one where curiosity is celebrated, friendships blossom, and children grow with confidence."
             text="Apply to Join"
-            link="/"
+            link="/Application_to_Join_April_2018.doc"
+            isInternal={false}
+            download={true}
             img={about1}
             reverse
           />
@@ -80,8 +83,8 @@ const About = () => {
             title="Building Bright Futures"
             p1=" Our exciting programme follows the Early Years Foundation Stage, balancing structured play and small group activities to build confidence and prepare children for school. Each child has a personalised online Learning Journey from day one."
             p2="Led by a qualified primary school teacher and dedicated staff, every session combines child-led and teacher-guided learning to help each child reach their full potential."
-            text="Playing and Learning"
-            link="/paying-and-learning"
+            text="Learning & Playing"
+            link="/learning-and-playing"
             img={about2}
           />
         </section>
@@ -95,7 +98,7 @@ const About = () => {
             title="Our Policies and Procedures"
             p1="Download and view our documents here"
             text1="Policies & Procedures"
-            link1="/"
+            link1="/policies-and-procedures"
             display="none"
           />
         </section>
@@ -105,8 +108,8 @@ const About = () => {
             title="Our Ethos"
             p1="At Little Learners, we believe every child is unique and full of potential. We support their growth by recognising and celebrating their individuality."
             p2="We know children thrive when they’re free to learn at their own pace, in a space where they feel happy, safe, and understood."
-            text="Playing and Learning"
-            link="/paying-and-learning"
+            text="Learning & Playing"
+            link="/learning-and-playing"
             img={about3}
             reverse
           />
@@ -117,7 +120,9 @@ const About = () => {
             p2="Each child is assigned a dedicated key teacher from their first day. This special bond helps us understand how your child learns, grows, and explores their interests—creating a more personalised experience."
             p3="We encourage two-way communication through regular chats at drop-off, pick-up, or by phone when needed. We always welcome feedback and respect each family’s values, culture, and individual needs."
             text="apply to join"
-            link="/"
+            link="/Application_to_Join_April_2018.doc"
+            isInternal={false}
+            download={true}
             img={about4}
           />
         </section>

@@ -24,22 +24,22 @@ const Home = () => {
         schemaMarkup={{
           "@context": "https://schema.org",
           "@type": "Preschool",
-          "name": "Little Learners Preschool",
-          "url": "https://www.littlelearnersplaygroup.com",
-          "image":
+          name: "Little Learners Preschool",
+          url: "https://www.littlelearnersplaygroup.com",
+          image:
             "https://www.littlelearnersplaygroup.com/assets/images/home-hero.webp",
-          "description":
+          description:
             "A nurturing preschool in Blackheath and Lee, London, offering play-based early years education for children aged 2–4.",
-          "address": {
+          address: {
             "@type": "PostalAddress",
-            "streetAddress": "25-33 Brandram Road",
-            "addressLocality": "London",
-            "postalCode": "SE13 5RT",
-            "addressCountry": "GB",
+            streetAddress: "25-33 Brandram Road",
+            addressLocality: "London",
+            postalCode: "SE13 5RT",
+            addressCountry: "GB",
           },
-          "telephone": "07595 120744",
-          "email": "info@littlelearnersplaygroup.com",
-          "openingHours": "Mo-Fr 08:30-16:00",
+          telephone: "07595 120744",
+          email: "info@littlelearnersplaygroup.com",
+          openingHours: "Mo-Fr 08:30-16:00",
         }}
       />
       <div className="home-page">
@@ -57,7 +57,12 @@ const Home = () => {
               an owner of a golden Labrador.
             </p>
             <div className="btn-container">
-              <Button text="Apply to Join" />
+              <Button
+                isInternal={false}
+                download={true}
+                link="/Application_to_Join_April_2018.doc"
+                text="Apply to Join"
+              />
             </div>
           </div>
           <img
@@ -105,7 +110,7 @@ const Home = () => {
                 (subject to eligibility criteria). Please contact us to find out
                 more and check your eligibility.
               </p>
-              <Button text="contact us" />
+              <Button text="contact us" link="contact-us"/>
             </div>
             <img
               src={funded}
@@ -139,8 +144,8 @@ const Home = () => {
             p1="Every session is thoughtfully planned Sylwia, a qualified primary teacher, and our team to ensure children benefit from a balance of child-led play and meaningful teacher-guided learning experiences."
             p2="Little Learners is filled with bright displays of children’s artwork, celebrating their creativity. We welcome parents with an open-door policy, offering open mornings, show-arounds, and free trial sessions to experience our setting firsthand."
             p3="We are open during term time only and break up for school holidays and half term."
-            text="Playing & Learning"
-            link="/playing-and-learning"
+            text="Learning & Playing"
+            link="/learning-and-playing"
             img={home2}
           />
         </section>
@@ -150,7 +155,6 @@ const Home = () => {
           text1="Term Times"
           link1="https://lewisham.gov.uk/myservices/education/schools/term-dates/term-dates-25-26"
           text2="Apply to Join"
-          link2="/"
         />
         <section className="fith-section">
           <div className="body-img-overlay">

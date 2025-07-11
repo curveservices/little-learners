@@ -17,9 +17,9 @@ const GalleryPage = () => {
         schemaMarkup={{
           "@context": "https://schema.org",
           "@type": "ImageGallery",
-          "name": "Little Learners Preschool Gallery",
-          "url": "https://www.littlelearnersplaygroup.com/gallery",
-          "description":
+          name: "Little Learners Preschool Gallery",
+          url: "https://www.littlelearnersplaygroup.com/gallery",
+          description:
             "A photo gallery showcasing the children and activities at Little Learners Preschool.",
         }}
       />
@@ -36,7 +36,12 @@ const GalleryPage = () => {
               days—captured in snapshots and artwork by our Little Learners.
             </p>
             <div className="btn-container">
-              <Button text="Apply to Join Us" link="/" />
+              <Button
+                text="Apply to Join Us"
+                link="/Application_to_Join_April_2018.doc"
+                isInternal={false}
+                download={true}
+              />
             </div>
           </div>
           <img
