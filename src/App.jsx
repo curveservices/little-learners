@@ -1,21 +1,21 @@
-import { Suspense } from "react";
+import { lazy, Suspense } from "react";
 import {
   createBrowserRouter,
   createRoutesFromElements,
   Route,
   RouterProvider,
 } from "react-router-dom";
-import Layout from "./layout/main/index.jsx";
+
+const Layout = lazy(() => import("./layout/main/index.jsx"));
 import LoadingSpinner from "./components/loadingSpinner/index.jsx";
 import NotFound from "./pages/404";
-import Home from "./pages/home/index.jsx";
-
+const Home = lazy(() => import("./pages/home/index.jsx"));
+const About = lazy(() => import("./pages/about/index.jsx"));
+const LearningPlaying = lazy(() => import("./pages/learning/index.jsx"));
+const GalleryPage = lazy(() => import("./pages/gallery/index.jsx"));
+const Contact = lazy(() => import("./pages/contact/index.jsx"));
+const Policies = lazy(() => import("./pages/policies/index.jsx"))
 import "./App.scss";
-import About from "./pages/about/index.jsx";
-import LearningPlaying from "./pages/learning/index.jsx";
-import GalleryPage from "./pages/gallery/index.jsx";
-import Contact from "./pages/contact/index.jsx";
-import Policies from "./pages/index.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
