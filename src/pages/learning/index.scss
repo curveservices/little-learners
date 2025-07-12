@@ -87,9 +87,10 @@
 @media screen and (max-width: 768px) {
     .learning-page {
         .hero {
+            height: 92vh !important;
             .learning-hero-image {
                 right: 0rem;
-                width: 550px;
+                width: 400px;
             }
         }
         .third-section {

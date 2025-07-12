@@ -20,10 +20,11 @@
 @media screen and (max-width: 768px) {
     .gallery-page {
         .hero {
+            height: 100vh !important;
             .gallery-hero-image {
                 right: 0rem;
                 bottom: 0;
-                width: 375px;
+                width: 300px;
             }
         }
 
