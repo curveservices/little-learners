@@ -1,5 +1,5 @@
 import Button from "../../components/button";
-import home from "../../assets/images/home-hero.webp";
+import home from "../../assets/images/hands.webp";
 import Cards from "../../components/cards/homeCards";
 import body from "../../assets/images/hero-body.webp";
 import TextAndImage from "../../components/blurImage";
