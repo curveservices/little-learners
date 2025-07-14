@@ -7,6 +7,7 @@
             right: 2rem;
             bottom: 0;
             width: 800px;
+            height: auto;
             object-fit: cover;
             transform: rotateY(180deg);
         }
@@ -25,12 +26,11 @@
         }
         .unordered-list {
             display: flex;
-            flex-wrap: wrap;
             gap: 4rem;
             padding: 0 2rem 1rem;
             font-weight: 600;
             ul {
-                width: 50%;
+                width: 100%;
                 list-style: none;
             }
         }
@@ -89,7 +89,8 @@
         .hero {
             .learning-hero-image {
                 right: 0rem;
-                width: 100%;
+                width: 300px;
+                max-height: 100%;
                 z-index: -1;
             }
         }

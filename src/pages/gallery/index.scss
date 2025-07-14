@@ -6,6 +6,7 @@
             right: 2rem;
             bottom: 0;
             width: 475px;
+            height: auto;
             object-fit: cover;
             transform: rotateY(180deg);
         }
@@ -23,7 +24,8 @@
             .gallery-hero-image {
                 right: 0rem;
                 z-index: -1;
-                width: 100%;
+                width: 300px;
+                max-height: 100%;
             }
         }
 

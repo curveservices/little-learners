@@ -14,7 +14,7 @@ import "./index.scss";
 import Helmet from "../../components/helmet";
 
 const Home = () => {
-  const { second, third, fourth, fith } = useScrollStates();
+  const { second } = useScrollStates();
   return (
     <>
       <Helmet
@@ -85,7 +85,7 @@ const Home = () => {
             <Cards />
           </div>
         </section>
-        <section className={`third-section ${third ? "anim" : "none"}`}>
+        <section className={`third-section`}>
           <TextAndImage
             subtitle="a taster to little learners"
             title="Messy & Sensory Play"
@@ -97,7 +97,7 @@ const Home = () => {
             link="/contact-us"
             reverse
           />
-          <div className="banner">
+          <div className="banner block">
             <div className="text">
               <h3 className="title">Free Funded Hours</h3>
               <p>

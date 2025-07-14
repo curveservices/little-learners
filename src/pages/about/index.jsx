@@ -63,7 +63,7 @@ const About = () => {
           <img src={aboutBody} alt="" className="about-body" />
           <AboutCards />
         </section>
-        <section className={`third-section ${third ? "anim" : "none"}`}>
+        <section className={`third-section`}>
           <TextAndImage
             subtitle="Meet the Founder"
             title="Sylwia Ferreday"

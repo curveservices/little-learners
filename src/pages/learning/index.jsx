@@ -68,7 +68,7 @@ const LearningPlaying = () => {
             reverse
           />
         </section>
-        <section className={`third-section ${third ? "anim" : "none"}`}>
+        <section className={`third-section`}>
           <div className="text-row">
             <TextAndImage
               subtitle="learning and playing"
@@ -97,7 +97,7 @@ const LearningPlaying = () => {
         </section>
         <section className="fith-section">
           <img src={aboutBody} alt="" className="about-image" loading="lazy" />
-          <div className="text-box">
+          <div className="text-box block">
             <div className="subtitle">
               <div className="indent"></div>
               day to day
@@ -109,7 +109,7 @@ const LearningPlaying = () => {
               following:
             </p>
           </div>
-          <div className="unordered-list">
+          <div className="unordered-list block">
             <ul>
               <li>Phonics and communication &amp; language</li>
               <li>Early Years Maths</li>
@@ -135,7 +135,7 @@ const LearningPlaying = () => {
               <li>Library</li>
             </ul>
           </div>
-          <div className="timetable">
+          <div className="timetable block">
             <div className="morning">
               <ul>
                 <li>
