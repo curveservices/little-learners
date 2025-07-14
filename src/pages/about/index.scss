@@ -45,7 +45,8 @@
   .about-page {
     .hero {
       .about-image {
-        width: 350px;
+        z-index: -1;
+        width: 300px;
       }
     }
     .fith-section,
