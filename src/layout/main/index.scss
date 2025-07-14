@@ -80,7 +80,7 @@
       flex-direction: column;
       animation: fadeIn 0.5s forwards;
       .hero-image {
-        width: 100%;
+        align-self: center;
         height: auto;
         object-fit: cover;
       }
@@ -152,8 +152,13 @@
         border-radius: 5px;
       }
       .hero {
-        height: 88vh;
+        height: 100vh;
         justify-content: space-between;
+        .hero-image {
+            max-width: 500px;
+            align-self: center;
+            height: auto;
+            object-fit: cover; }
       }
 
       .text-box {
@@ -235,9 +240,8 @@
       .hero {
         flex-direction: column;
         justify-content: space-between;
-        height: 88vh;
         .hero-image {
-          width: 100%;
+          width: 1024px;
           height: auto;
         }
       }
