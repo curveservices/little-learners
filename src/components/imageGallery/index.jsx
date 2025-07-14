@@ -55,7 +55,7 @@ const Gallery = ({ galleryID }) => {
   if (!galleryData) return <p>Gallery not found.</p>;
 
   return (
-    <div className="gallery-block">
+    <div className="gallery-block block">
       <h2>{galleryData.title}</h2>
       <ReactImageGallery
         items={galleryData.images}
