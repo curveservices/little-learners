@@ -1,26 +1,27 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 
-const useScrollStates = () => {
-  const [second, setSecond] = useState(false);
-  const [third, setThird] = useState(false);
-  const [forth, setForth] = useState(false);
-  const [fith, setFith] = useState(false);
-
+const useScrollState = (selector = ".fade-in-on-scroll") => {
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollY = window.scrollY;
-      setSecond(scrollY > 75);
-      setThird(scrollY > 1000);
-      setForth(scrollY > 1400);
-      setFith(scrollY > 1800);
+    const elements = document.querySelectorAll(selector);
+
+    const observer = new IntersectionObserver(
+      (entries, obs) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            obs.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.20 },
+    );
+
+    elements.forEach((el) => observer.observe(el));
+
+    return () => {
+      elements.forEach((el) => observer.unobserve(el));
     };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  return { second, third, forth, fith };
+  }, [selector]);
 };
 
-export default useScrollStates;
+export default useScrollState;
