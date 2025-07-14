@@ -101,7 +101,7 @@ const Navbar = () => {
             </div>
           </NavLink>
           <div className="contact-container">
-            <div className="text">
+            <div className="text mobile-icon">
               <b>Get In Touch</b>
             </div>
             <div className="mobile-icon text small menu-container">
@@ -111,7 +111,6 @@ const Navbar = () => {
             <div className="mobile-icon text small menu-container">
               <FontAwesomeIcon icon={faPhone} /> 07595 120744
             </div>
-            <Socials className="mobile-icons menu-container"/>
           </div>
         </nav>
         <Socials />
