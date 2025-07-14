@@ -7,7 +7,11 @@ import Testimonials from "../../components/testimonials";
 import './index.scss';
 
 const GalleryPage = () => {
-  const { second, third, fourth } = useScrollStates();
+  const FadeInSection = ({ children }) => {
+    useScrollStates();
+
+    return <div className={`fade-in-on-scroll`}>{children}</div>;
+  };
   return (
     <>
       <Helmet
@@ -51,43 +55,53 @@ const GalleryPage = () => {
             loading="lazy"
           />
         </section>
-        <section className={`second-section ${second ? "anim" : "none"}`}>
-          <div className="text-box">
-            <div className="subtitle">
-              <div className="indent"></div>
-              our home
+        <section className="second-section">
+          <FadeInSection>
+            <div className="text-box">
+              <div className="subtitle">
+                <div className="indent"></div>
+                our home
+              </div>
+              <h2>A Peek Inside Little Learners</h2>
+              <p>
+                Step into our world! From colourful classrooms to our outdoor
+                play area, these moments capture the joy, creativity, and
+                discovery happening every day at Little Learners. We believe
+                learning should be fun, hands-on, and full of smiles—and our
+                gallery reflects just that.
+              </p>
             </div>
-            <h2>A Peek Inside Little Learners</h2>
-            <p>
-              Step into our world! From colourful classrooms to our outdoor play
-              area, these moments capture the joy, creativity, and discovery
-              happening every day at Little Learners. We believe learning should
-              be fun, hands-on, and full of smiles—and our gallery reflects just
-              that.
-            </p>
-          </div>
-          <Gallery galleryID="home" />
+          </FadeInSection>
+          <FadeInSection>
+            <Gallery galleryID="home" />
+          </FadeInSection>
         </section>
-        <section className={`third-section ${third ? "anim" : "none"}`}>
-          <div className="text-box">
-            <div className="subtitle">
-              <div className="indent"></div>
-              Art & design
+        <section className="third-section">
+          <FadeInSection>
+            <div className="text-box">
+              <div className="subtitle">
+                <div className="indent"></div>
+                Art & design
+              </div>
+              <h2>Artwork by Our Little Artists</h2>
+              <p>
+                We're constantly amazed by the creativity and imagination of our
+                children. This gallery showcases a selection of their
+                artwork—paintings, drawings, and projects made with love. Every
+                piece tells a story and celebrates each child's unique
+                perspective.
+              </p>
             </div>
-            <h2>Artwork by Our Little Artists</h2>
-            <p>
-              We're constantly amazed by the creativity and imagination of our
-              children. This gallery showcases a selection of their
-              artwork—paintings, drawings, and projects made with love. Every
-              piece tells a story and celebrates each child's unique
-              perspective.
-            </p>
-          </div>
-          <Gallery galleryID="art" />
+          </FadeInSection>
+          <FadeInSection>
+            <Gallery galleryID="art" />
+          </FadeInSection>
         </section>
-        <section className="fourth-section">
-          <Testimonials />
-        </section>
+        <FadeInSection>
+          <section className="fourth-section">
+            <Testimonials />
+          </section>
+        </FadeInSection>
       </div>
     </>
   );
