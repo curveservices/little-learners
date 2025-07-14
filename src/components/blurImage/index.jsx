@@ -21,7 +21,7 @@ const TextAndImage = ({
     <div
       className={`text-image-wrapper ${flip ? "flip" : ""} ${reverse ? "reverse" : ""}`}
     >
-      <div className="text-box block">
+      <div className="text-box">
         <div className="subtitle">
           <div className="indent"></div>
           <div>{subtitle}</div>
@@ -45,7 +45,7 @@ const TextAndImage = ({
       <img
         src={img}
         alt="Little Learners Pre-School in Blackheath, London"
-        className="blur-img block"
+        className="blur-img"
         loading="lazy"
       />
     </div>

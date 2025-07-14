@@ -56,37 +56,37 @@
   &.reverse {
     flex-direction: row-reverse;
   }
-   
+}
 
   @media screen and (max-width: 768px) {
     .flip {
-        img.blur-img {
-          &:hover {
-            transform: scale(1);
-            padding: initial;
-          }
-        } 
-      }
+      img.blur-img {
+          width: 300px;
+          max-height: 300px;
+        &:hover {
+          transform: scale(1);
+          padding: initial;
+        }
+      } 
+    }
     .text-image-wrapper {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
-      gap: 1rem;
-      padding: 0;
-    }
-    img.blur-img {
-      flex: 1;
-      width: 350px;
-      max-height: 350px;
-    }
+      gap: 2rem;
+      padding: 2rem 0;
+      img.blur-img {
+        flex: 1;
+        width: 300px;
+        max-height: 300px;
+      }
     
-
-    &.reverse {
-      flex-direction: column;
+      .reverse {
+        flex-direction: column; 
+      }
     }
   }
-}
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .flip {
   
