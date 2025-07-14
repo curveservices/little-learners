@@ -37,7 +37,8 @@
         .about-image {
             position: absolute;
             left: 0;
-            width: 100%;
+            margin-left: calc(-50vw + 50%);
+            width: 100vw;
             height: auto;
             opacity: 0.4;
             z-index: -1;
@@ -48,6 +49,7 @@
             flex-wrap: wrap;
             gap: 3rem;
             justify-content: center;
+            padding-bottom: 2rem;
             .morning {
                 max-width: 600px;
                 transition: all 0.3s ease-in-out;
@@ -75,7 +77,7 @@
                 ul {
                     list-style: none;
                     margin: 0;
-                    padding: 1rem;
+                    padding: 1rem 1rem 0;
                     li {
                         margin-bottom: 1rem;
                     }
@@ -106,6 +108,7 @@
 
         .fith-section {
             .unordered-list {
+                flex-direction: column;
                 gap: 0rem;
                 padding: 0 1rem 1rem;
         
@@ -113,15 +116,6 @@
                     width: 100%;
                     list-style: initial;
                 }   
-            }
-            .about-image {
-                position: absolute;
-                left: 0;
-                width: 100%;
-                height: 100vh;
-                opacity: 0.4;
-                z-index: -1;
-                object-fit: cover;
             }
 
             .timetable {
@@ -131,6 +125,7 @@
                 align-items: flex-end;
                 justify-content: center;
                 z-index: 1;
+                padding-bottom: 0;
 
                 .morning {
                     max-width: 600px;

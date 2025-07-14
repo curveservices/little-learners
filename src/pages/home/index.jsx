@@ -14,7 +14,11 @@ import "./index.scss";
 import Helmet from "../../components/helmet";
 
 const Home = () => {
-  const { second } = useScrollStates();
+  const FadeInSection = ({ children }) => {
+    useScrollStates();
+
+    return <div className={`fade-in-on-scroll `}>{children}</div>;
+  };
   return (
     <>
       <Helmet
@@ -81,81 +85,91 @@ const Home = () => {
               className="body-img"
             />
           </div>
-          <div className={`${second ? "anim" : "none"}`}>
-            <Cards />
-          </div>
+          <FadeInSection>
+              <Cards />
+          </FadeInSection>
         </section>
         <section className={`third-section`}>
-          <TextAndImage
-            subtitle="a taster to little learners"
-            title="Messy & Sensory Play"
-            p1="Get ready to squish, splash, and sparkle! Join us every Friday (term time) from 9:30 to 10:30 AM for Messy Play and Sensory Fun"
-            p2="Specially designed for curious little ones aged 12 months to 5 years. It’s the perfect hour of giggles, goo, and hands-on discovery for everyone especially for children that are too young to join our preschool."
-            p3="Contact us to find out more about our messy and sensory play sessions."
-            img={messy}
-            text="Contact us"
-            link="/contact-us"
-            reverse
-          />
-          <div className="banner block">
-            <div className="text">
-              <h3 className="title">Free Funded Hours</h3>
-              <p>
-                Little Learners Preschool offers government-funded 15 and
-                30-hour early education places for eligible children aged 2 to 4
-                years.
-              </p>
-              <p>
-                Funded sessions support children aged 2–3 and 3-4 year olds
-                (subject to eligibility criteria). Please contact us to find out
-                more and check your eligibility.
-              </p>
-              <Button text="contact us" link="contact-us"/>
-            </div>
-            <img
-              src={funded}
-              alt="Little Learners preschool in Blackheath Lee, London"
-              className="banner-img"
+          <FadeInSection>
+            <TextAndImage
+              subtitle="a taster to little learners"
+              title="Messy & Sensory Play"
+              p1="Get ready to squish, splash, and sparkle! Join us every Friday (term time) from 9:30 to 10:30 AM for Messy Play and Sensory Fun"
+              p2="Specially designed for curious little ones aged 12 months to 5 years. It’s the perfect hour of giggles, goo, and hands-on discovery for everyone especially for children that are too young to join our preschool."
+              p3="Contact us to find out more about our messy and sensory play sessions."
+              img={messy}
+              text="Contact us"
+              link="/contact-us"
+              reverse
             />
-          </div>
-          <TextAndImage
-            subtitle="Teaching & Learning"
-            title="Our Sessions"
-            p1=" Our exciting, well-rounded programme builds a strong foundation for
-            learning, helping children transition into pre-prep or primary
-            school feeling confident, well-prepared, and ready to embrace new
-            challenges."
-            p2="Our play-based sessions follow the Early Years Foundation Stage
-            Curriculum, encouraging children to explore, make independent
-            choices, and build meaningful relationships as they grow in
-            confidence and curiosity."
-            p3="The Early Years Foundation Stage offers engaging learning through
-            play and group activities. Each child is supported by a Key Worker
-            and a personalised Learning Journey from their first day at Little
-            Learners."
-            text="Find out about us"
-            link="/about-us"
-            img={home1}
-            reverse
-          />
-          <TextAndImage
-            subtitle="Careful Planning"
-            title="Our Stucture"
-            p1="Every session is thoughtfully planned Sylwia, a qualified primary teacher, and our team to ensure children benefit from a balance of child-led play and meaningful teacher-guided learning experiences."
-            p2="Little Learners is filled with bright displays of children’s artwork, celebrating their creativity. We welcome parents with an open-door policy, offering open mornings, show-arounds, and free trial sessions to experience our setting firsthand."
-            p3="We are open during term time only and break up for school holidays and half term."
-            text="Learning & Playing"
-            link="/learning-and-playing"
-            img={home2}
-          />
+          </FadeInSection>
+          <FadeInSection>
+            <div className="banner block">
+              <div className="text">
+                <h3 className="title">Free Funded Hours</h3>
+                <p>
+                  Little Learners Preschool offers government-funded 15 and
+                  30-hour early education places for eligible children aged 2 to
+                  4 years.
+                </p>
+                <p>
+                  Funded sessions support children aged 2–3 and 3-4 year olds
+                  (subject to eligibility criteria). Please contact us to find
+                  out more and check your eligibility.
+                </p>
+                <Button text="contact us" link="contact-us" />
+              </div>
+              <img
+                src={funded}
+                alt="Little Learners preschool in Blackheath Lee, London"
+                className="banner-img"
+              />
+            </div>
+          </FadeInSection>
+          <FadeInSection>
+            <TextAndImage
+              subtitle="Teaching & Learning"
+              title="Our Sessions"
+              p1=" Our exciting, well-rounded programme builds a strong foundation for
+              learning, helping children transition into pre-prep or primary
+              school feeling confident, well-prepared, and ready to embrace new
+              challenges."
+              p2="Our play-based sessions follow the Early Years Foundation Stage
+              Curriculum, encouraging children to explore, make independent
+              choices, and build meaningful relationships as they grow in
+              confidence and curiosity."
+              p3="The Early Years Foundation Stage offers engaging learning through
+              play and group activities. Each child is supported by a Key Worker
+              and a personalised Learning Journey from their first day at Little
+              Learners."
+              text="Find out about us"
+              link="/about-us"
+              img={home1}
+              reverse
+            />
+          </FadeInSection>
+          <FadeInSection>
+            <TextAndImage
+              subtitle="Careful Planning"
+              title="Our Stucture"
+              p1="Every session is thoughtfully planned Sylwia, a qualified primary teacher, and our team to ensure children benefit from a balance of child-led play and meaningful teacher-guided learning experiences."
+              p2="Little Learners is filled with bright displays of children’s artwork, celebrating their creativity. We welcome parents with an open-door policy, offering open mornings, show-arounds, and free trial sessions to experience our setting firsthand."
+              p3="We are open during term time only and break up for school holidays and half term."
+              text="Learning & Playing"
+              link="/learning-and-playing"
+              img={home2}
+            />
+          </FadeInSection>
         </section>
-        <CallToAction
-          title="Open Times"
-          p1="Monday to Friday 9.30am - 2.30pm during term time"
-          text1="Term Times"
-          link1="https://lewisham.gov.uk/myservices/education/schools/term-dates/term-dates-25-26"
-          text2="Apply to Join"
-        />
+      
+          <CallToAction
+            title="Open Times"
+            p1="Monday to Friday 9.30am - 2.30pm during term time"
+            text1="Term Times"
+            link1="https://lewisham.gov.uk/myservices/education/schools/term-dates/term-dates-25-26"
+            text2="Apply to Join"
+          />
+        
         <section className="fith-section">
           <div className="body-img-overlay">
             <img
@@ -164,7 +178,9 @@ const Home = () => {
               className="body-img"
             />
           </div>
-          <Testimonials />
+          <FadeInSection>
+            <Testimonials />
+          </FadeInSection>
         </section>
       </div>
     </>
