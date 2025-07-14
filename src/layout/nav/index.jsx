@@ -3,8 +3,10 @@ import { NavLink } from "react-router-dom";
 import logo from "../../assets/images/LL-favicon.svg";
 import {
   faEnvelope,
+  faEnvelopeOpen,
   faHouse,
   faImage,
+  faPhone,
   faPlay,
   faUsers,
 } from "@fortawesome/free-solid-svg-icons";
@@ -98,6 +100,19 @@ const Navbar = () => {
               <div className="text">Contact Us</div>
             </div>
           </NavLink>
+          <div className="contact-container">
+            <div className="text">
+              <b>Get In Touch</b>
+            </div>
+            <div className="mobile-icon text small menu-container">
+              <FontAwesomeIcon icon={faEnvelopeOpen} />
+              info@littlelearnersplaygroup.com
+            </div>
+            <div className="mobile-icon text small menu-container">
+              <FontAwesomeIcon icon={faPhone} /> 07595 120744
+            </div>
+            <Socials className="mobile-icons menu-container"/>
+          </div>
         </nav>
         <Socials />
         <MenuToggle showNav={showNav} setShowNav={setShowNav} />
