@@ -85,11 +85,7 @@ const Home = () => {
               className="body-img"
             />
           </div>
-          <FadeInSection>
-            <div className="">
               <Cards />
-            </div>
-          </FadeInSection>
         </section>
         <section className="third-section">
           <FadeInSection>
