@@ -56,7 +56,7 @@ const Layout = () => {
         </>
       )};
       <QuickLinksPanel />
-      {showFooter && <Footer />}
+      {showFooter && <Footer className="visiable" />}
       <ScrollRestoration />
     </>
   );
