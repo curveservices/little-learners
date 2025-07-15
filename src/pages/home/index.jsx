@@ -12,8 +12,10 @@ import Testimonials from "../../components/testimonials";
 import useScrollStates from "../../components/scrollState";
 import "./index.scss";
 import Helmet from "../../components/helmet";
+import { useState } from "react";
 
 const Home = () => {
+  const [heroLoaded, setHeroLoaded] = useState(false);
   const FadeInSection = ({ children }) => {
     useScrollStates();
 
@@ -74,19 +76,25 @@ const Home = () => {
             alt="Little Learners Preschool, Blackheath, Greenwich, London"
             className="hero-image"
             loading="lazy"
+            onLoad={() => setHeroLoaded(true)}
             style={{ paddingTop: "1rem" }}
           />
         </section>
-        <section className="second-section">
-          <div className="body-img-overlay">
-            <img
-              src={body}
-              alt="Little Learners Preschool, Blackheath, London"
-              className="body-img"
-            />
-          </div>
+        {heroLoaded && (
+          <section className="second-section">
+            <div className="body-img-overlay">
+              <img
+                src={body}
+                alt="Little Learners Preschool, Blackheath, London"
+                className="body-img"
+              />
+            </div>
+            <FadeInSection>
               <Cards />
-        </section>
+            </FadeInSection>
+          </section>
+        )}
+
         <section className="third-section">
           <FadeInSection>
             <TextAndImage
