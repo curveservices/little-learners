@@ -6,7 +6,7 @@ const Footer = () => {
   const year = new Date().getFullYear();
   return (
     <footer className="visible">
-      <div className="footer-container visible">
+      <div className="footer-container">
         <div className="footer-left">
           <div className="footer-title">OPENING HOURS</div>
           <div>Monday to Friday: 9:30am - 2:30pm</div>
