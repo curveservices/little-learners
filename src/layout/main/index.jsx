@@ -27,7 +27,7 @@ const Layout = () => {
     setShowFooter(false);
     const timeout = setTimeout(() => {
       setShowFooter(true);
-    }, 300);
+    }, 1000);
     return () => clearTimeout(timeout);
   }, [location.pathname]);
   
