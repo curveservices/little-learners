@@ -5,7 +5,7 @@ import "./index.scss";
 const Footer = () => {
   const year = new Date().getFullYear();
   return (
-    <footer>
+    <footer className="visible">
       <div className="footer-container">
         <div className="footer-left">
           <div className="footer-title">OPENING HOURS</div>
