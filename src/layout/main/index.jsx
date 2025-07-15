@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Navbar from "../nav";
-import { Outlet, ScrollRestoration } from "react-router-dom";
+import { Outlet, ScrollRestoration, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import Footer from "../footer";
@@ -9,6 +9,8 @@ import QuickLinksPanel from "../../components/quickLinks";
 
 const Layout = () => {
   const [showButton, setShowButton] = useState(false);
+  const [showFooter, setShowFooter] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,6 +22,14 @@ const Layout = () => {
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  useEffect(() => {
+    setShowFooter(false);
+    const timeout = setTimeout(() => {
+      setShowFooter(true);
+    }, 300);
+    return () => clearTimeout(timeout);
+  }, [location.pathname]);
   
 
   const scrollToTop = () => {
@@ -49,7 +59,7 @@ const Layout = () => {
         </>
       )};
       <QuickLinksPanel />
-      <Footer />
+      <Footer isVisible={showFooter} />
       <ScrollRestoration />
     </>
   );

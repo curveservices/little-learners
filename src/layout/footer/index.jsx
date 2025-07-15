@@ -1,21 +1,13 @@
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/LL-favicon.svg";
 import "./index.scss";
-import { useEffect, useState } from "react";
 
-const Footer = () => {
-  const [showFooter, setShowFooter] = useState(false);
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setShowFooter(true);
-    }, 1000); 
-
-    return () => clearTimeout(timeout);
-  }, []);
+const Footer = ({ isVisible }) => {
+  
   
   const year = new Date().getFullYear();
   return (
-    <footer className={showFooter ? "visible" : "hidden"}>
+    <footer className={isVisible ? "visible" : "hidden"}>
       <div className="footer-container">
         <div className="footer-left">
           <div className="footer-title">OPENING HOURS</div>
