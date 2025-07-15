@@ -7,7 +7,7 @@ const Helmet = ({ title, description, keywords, schemaMarkup }) => {
     let metaDesc = document.querySelector("meta[name='description']");
     if (!metaDesc) {
       metaDesc = document.createElement("meta");
-      metaDesc.namme = "description";
+      metaDesc.name = "description";
       document.head.appendChild(metaDesc);
     }
     metaDesc.content = description || "";
