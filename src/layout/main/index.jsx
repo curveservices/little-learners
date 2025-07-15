@@ -19,12 +19,12 @@ const Layout = () => {
       setTimeout(() => {
         setShowFooter(true);
       }, 100);
-    }
+    };
+    setTimeout(() => {
+      handleScroll();
+      window.addEventListener("scroll", handleScroll);
+    }, 50);
   };
-
-  window.addEventListener("scroll", handleScroll);
-
-  handleScroll();
 
   return () => window.removeEventListener("scroll", handleScroll);
 }, [showFooter]);
@@ -56,7 +56,7 @@ const Layout = () => {
         </>
       )};
       <QuickLinksPanel />
-      {showFooter && <Footer />}
+      <Footer className={showFooter ? "visible" : "hidden"} />
       <ScrollRestoration />
     </>
   );
