@@ -170,7 +170,7 @@ const Home = () => {
 
         <CallToAction
           title="Open Times"
-          p1="Monday to Friday 9.30am - 2.30pm during term time"
+          p1="Monday to Friday 8.30am - 4.00pm during term time"
           text1="Term Times"
           link1="https://lewisham.gov.uk/myservices/education/schools/term-dates/term-dates-25-26"
           text2="Apply to Join"
