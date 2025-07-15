@@ -10,14 +10,20 @@ ReactModal.setAppElement("#root");
 
 const TestimonialCard = ({ testimonial }) => {
   const textRef = useRef(null);
+  const cardRef = useRef(null);
   const [showReadMore, setShowReadMore] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isCloned, setIsCloned] = useState(false);
 
   useEffect(() => {
     const el = textRef.current;
     if (el && el.scrollHeight > el.clientHeight) {
       setShowReadMore(true);
     }
+    const cloned = cardRef.current
+      ?.closest(".slick-slide")
+      ?.classList.contains("slick-cloned");
+    setIsCloned(cloned);
   }, []);
 
   const openModal = () => setIsModalOpen(true);
@@ -29,9 +35,11 @@ const TestimonialCard = ({ testimonial }) => {
       <div className="text-container">
         <p className="text">{testimonial.text}</p>
       </div>
-      <button onClick={() => setIsModalOpen(true)} className="read-more-btn">
-        Read More
-      </button>
+      {!isCloned && showReadMore && (
+        <button onClick={openModal} className="read-more-btn">
+          Read More
+        </button>
+      )}
 
       <ReactModal
         isOpen={isModalOpen}
@@ -128,7 +136,7 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="testimonial-container" aria-hidden="false">
+    <div className="testimonial-container">
       <div className="text-box">
         <div className="subtitle">
           <div className="indent"></div>
@@ -136,12 +144,13 @@ const Testimonials = () => {
         </div>
         <h2>Parent Testimonials</h2>
       </div>
-
-      <Slider {...sliderSettings}>
-        {testimonials.map((testimonial, index) => (
-          <TestimonialCard key={index} testimonial={testimonial} />
-        ))}
-      </Slider>
+      <section aria-label="Testimonials" role="region">
+        <Slider {...sliderSettings}>
+          {testimonials.map((testimonial, index) => (
+            <TestimonialCard key={index} testimonial={testimonial} />
+          ))}
+        </Slider>
+      </section>
     </div>
   );
 };
