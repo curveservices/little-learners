@@ -54,8 +54,7 @@ const Layout = () => {
             Back to Top
           </button>
         </>
-      )}
-      ;
+      )};
       <QuickLinksPanel />
       {showFooter && <Footer />}
       <ScrollRestoration />
