@@ -10,17 +10,25 @@ import QuickLinksPanel from "../../components/quickLinks";
 const Layout = () => {
   const [showButton, setShowButton] = useState(false);
   const [showFooter, setShowFooter] = useState(false);
+
   useEffect(() => {
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 300) {
-        setShowButton(true);
-      } else {
-        setShowButton(false);
-      }
-      const timeout = setTimeout(() => setShowFooter(true), 100);
-      return () => clearTimeout(timeout);
-    });
-  }, []);
+  const handleScroll = () => {
+    setShowButton(window.scrollY > 300);
+
+    if (!showFooter) {
+      setTimeout(() => {
+        setShowFooter(true);
+      }, 100);
+    }
+  };
+
+  window.addEventListener("scroll", handleScroll);
+
+  handleScroll();
+
+  return () => window.removeEventListener("scroll", handleScroll);
+}, [showFooter]);
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
