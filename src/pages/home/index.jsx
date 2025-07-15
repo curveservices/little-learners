@@ -86,10 +86,12 @@ const Home = () => {
             />
           </div>
           <FadeInSection>
+            <div className="">
               <Cards />
+            </div>
           </FadeInSection>
         </section>
-        <section className={`third-section`}>
+        <section className="third-section">
           <FadeInSection>
             <TextAndImage
               subtitle="a taster to little learners"
@@ -161,15 +163,15 @@ const Home = () => {
             />
           </FadeInSection>
         </section>
-      
-          <CallToAction
-            title="Open Times"
-            p1="Monday to Friday 9.30am - 2.30pm during term time"
-            text1="Term Times"
-            link1="https://lewisham.gov.uk/myservices/education/schools/term-dates/term-dates-25-26"
-            text2="Apply to Join"
-          />
-        
+
+        <CallToAction
+          title="Open Times"
+          p1="Monday to Friday 9.30am - 2.30pm during term time"
+          text1="Term Times"
+          link1="https://lewisham.gov.uk/myservices/education/schools/term-dates/term-dates-25-26"
+          text2="Apply to Join"
+        />
+
         <section className="fith-section">
           <div className="body-img-overlay">
             <img
