@@ -64,6 +64,7 @@
       flex-direction: column;
       animation: fadeIn 0.5s forwards;
       .hero-image {
+        max-width: 100%;
         align-self: center;
         height: auto;
         object-fit: cover;
