@@ -128,7 +128,7 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="testimonial-container">
+    <div className="testimonial-container" aria-hidden="false">
       <div className="text-box">
         <div className="subtitle">
           <div className="indent"></div>
