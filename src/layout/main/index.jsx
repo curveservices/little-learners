@@ -12,22 +12,14 @@ const Layout = () => {
   const [showFooter, setShowFooter] = useState(false);
 
   useEffect(() => {
-  const handleScroll = () => {
-    setShowButton(window.scrollY > 300);
-
-    if (!showFooter) {
-      setTimeout(() => {
-        setShowFooter(true);
-      }, 100);
-    };
-    setTimeout(() => {
-      handleScroll();
-      window.addEventListener("scroll", handleScroll);
-    }, 50);
-  };
-
-  return () => window.removeEventListener("scroll", handleScroll);
-}, [showFooter]);
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 75) {
+        setShowButton(true);
+      } else {
+        setShowButton(false);
+      }
+    });
+  }, []);
 
   const scrollToTop = () => {
     window.scrollTo({
