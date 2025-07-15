@@ -22,10 +22,9 @@
     .gallery-page {
         .hero {
             .gallery-hero-image {
-                right: 0rem;
-                z-index: -1;
+                position: initial;
+                align-self: center;
                 width: 300px;
-                max-height: 100%;
             }
         }
 
