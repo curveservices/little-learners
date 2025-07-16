@@ -22,7 +22,8 @@
 html {
   height: 100%;
   width: 100vw;
-  background: #fff;  
+  background: #fff;
+  overflow-x: hidden;
 }
 
 body {
@@ -34,4 +35,24 @@ body {
 a {
   color: #fff;
   text-decoration: none;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #dbdbdb;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary);
 }
