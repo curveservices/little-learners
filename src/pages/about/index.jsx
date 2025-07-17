@@ -110,7 +110,6 @@ const About = () => {
               p1="Download and view our documents here"
               text1="Policies & Procedures"
               link1="/policies-and-procedures"
-              display="none"
             />
           </section>
         </FadeInSection>
@@ -147,7 +146,7 @@ const About = () => {
             <CallToAction
               title="Progress Updates"
               p1="We provide written progress checks for two-year-olds, highlighting development in key learning areas like communication, creativity, and overall growth."
-              p2="Our website is regularly updated with news, curriculum info, activity tips, and children's artwork to keep you informed and inspired at home."
+             
               text1="contact us"
               link1="/contact-us"
               display="none"
