@@ -33,7 +33,7 @@ const TestimonialCard = ({ testimonial }) => {
     <div className="testimonial">
       <h3 className="name subtitle">{testimonial.name}</h3>
       <div className="text-container">
-        <p className="text">{testimonial.text}</p>
+        <p ref={textRef} className="text">{testimonial.text}</p>
       </div>
       {!isCloned && showReadMore && (
         <button onClick={openModal} className="read-more-btn">
