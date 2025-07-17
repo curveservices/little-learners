@@ -13,6 +13,10 @@
       margin: 0;
     }
   }
+  .btn-container {
+    display: flex;
+    align-items: center;
+  }
 }
 .cta-body {
   position: absolute;
