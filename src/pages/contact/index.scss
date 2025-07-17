@@ -50,6 +50,7 @@
             .submit-button {
                 text-transform: uppercase;
                 background: #fff;
+                color: #000;
                 letter-spacing: 4px;
                 font-family: "Montserrat", sans-serif;
                 font-weight: 600;
@@ -60,7 +61,7 @@
                 min-width: fit-content;
                 box-shadow: var(--button-shadow);
                 transition: all 0.3s ease-in-out;
-                animation: fadeInUp 1s 1.5s backwards;
+                animation: fadeInUp 0.5s 0.5s backwards;
                 cursor: pointer;
 
                 &:hover {
