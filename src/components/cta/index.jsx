@@ -29,8 +29,6 @@ const CallToAction = ({
           <Button
             text={text1}
             link={link1}
-            background="var(--secondary)"
-            color="#fff"
           />
         </div>
       </div>
