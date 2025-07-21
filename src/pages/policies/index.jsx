@@ -50,135 +50,135 @@ const Policies = () => {
                 </a>
               </li>
               <li>
-                <a href="">
+                <a href="" download={true}>
                   Safeguarding children young people and vurnerable adults
                 </a>
               </li>
               <li>
-                <a href="">Looked After Children</a>
+                <a href="" download={true}>Looked After Children</a>
               </li>
               <li>
-                <a href="">Uncollected Child</a>
+                <a href="" download={true}>Uncollected Child</a>
               </li>
               <li>
-                <a href="">Missing Child</a>
+                <a href="" download={true}>Missing Child</a>
               </li>
               <li>
-                <a href="">Online Safety</a>
+                <a href="" download={true}>Online Safety</a>
               </li>
               <li>
-                <a href="">Employment</a>
+                <a href="" download={true}>Employment</a>
               </li>
               <li>
-                <a href="">Student Placements</a>
+                <a href="" download={true}>Student Placements</a>
               </li>
               <li>
-                <a href="">First Aid</a>
+                <a href="" download={true}>First Aid</a>
               </li>
               <li>
-                <a href="">Induction of Employees and Volunteers</a>
+                <a href="" download={true}>Induction of Employees and Volunteers</a>
               </li>
               <li>
-                <a href="">The Role of the Key Person and Settling In</a>
+                <a href="" download={true}>The Role of the Key Person and Settling In</a>
               </li>
               <li>
-                <a href="">Staffing (group provision)</a>
+                <a href="" download={true}>Staffing (group provision)</a>
               </li>
               <li>
-                <a href="">Administering Medicines</a>
+                <a href="" download={true}>Administering Medicines</a>
               </li>
             </ul>
             <ul>
               <li>
-                <a href="">
+                <a href="" download={true}>
                   Managing Children who are Sick Infectious or with Allergies
                 </a>
               </li>
               <li>
-                <a href="">
+                <a href="" download={true}>
                   Recording and Reporting of Accidents and Incidents
                 </a>
               </li>
               <li>
-                <a href="">Nappy Changing</a>
+                <a href="" download={true}>Nappy Changing</a>
               </li>
               <li>
-                <a href="">Food and Drink</a>
+                <a href="" download={true}>Food and Drink</a>
               </li>
               <li>
-                <a href="">Individule Health Plan</a>
+                <a href="" download={true}>Individule Health Plan</a>
               </li>
               <li>
-                <a href="">Promoting Positive Behaviour</a>
+                <a href="" download={true}>Promoting Positive Behaviour</a>
               </li>
               <li>
-                <a href="">Health and Safety General Standards</a>
+                <a href="" download={true}>Health and Safety General Standards</a>
               </li>
               <li>
-                <a href="">
+                <a href="" download={true}>
                   Maintaining Childrens Safety and Security on Premises
                 </a>
               </li>
               <li>
-                <a href="">Risk Assessment</a>
+                <a href="" download={true}>Risk Assessment</a>
               </li>
               <li>
-                <a href="">Fire Safety and Emergency Evacuation</a>
+                <a href="" download={true}>Fire Safety and Emergency Evacuation</a>
               </li>
               <li>
-                <a href="">No Smoking</a>
+                <a href="" download={true}>No Smoking</a>
               </li>
               <li>
-                <a href="">Staff Safety including Home Visits</a>
+                <a href="" download={true}>Staff Safety including Home Visits</a>
               </li>
             </ul>
             <ul>
               <li>
-                <a href="">Supporting Children with SEN</a>
+                <a href="" download={true}>Supporting Children with SEN</a>
               </li>
               <li>
-                <a href="">
+                <a href="" download={true}>
                   Valuing Diversity and Promoting Inclusion and Equality
                 </a>
               </li>
               <li>
-                <a href="">British Values</a>
+                <a href="" download={true}>British Values</a>
               </li>
               <li>
-                <a href="">Early Years Prospectus</a>
+                <a href="" download={true}>Early Years Prospectus</a>
               </li>
               <li>
-                <a href="">Sample Privacy Notice</a>
+                <a href="" download={true}>Sample Privacy Notice</a>
               </li>
               <li>
-                <a href="">Admissions October</a>
+                <a href="" download={true}>Admissions October</a>
               </li>
               <li>
-                <a href="">Parental Involvement</a>
+                <a href="" download={true}>Parental Involvement</a>
               </li>
               <li>
-                <a href="">Childrens Records April</a>
+                <a href="" download={true}>Childrens Records April</a>
               </li>
               <li>
-                <a href="">Provider Records April</a>
+                <a href="" download={true}>Provider Records April</a>
               </li>
               <li>
-                <a href="">Transfer of Records to School</a>
+                <a href="" download={true}>Transfer of Records to School</a>
               </li>
               <li>
-                <a href="">Information Sharing</a>
+                <a href="" download={true}>Information Sharing</a>
               </li>
               <li>
-                <a href="">Working in Partnership with Other Agencies</a>
+                <a href="" download={true}>Working in Partnership with Other Agencies</a>
               </li>
               <li>
-                <a href="">Making a Complaint</a>
+                <a href="" download={true}>Making a Complaint</a>
               </li>
               <li>
-                <a href="">Childcare Terms and Conditions</a>
+                <a href="" download={true}>Childcare Terms and Conditions</a>
               </li>
               <li>
-                <a href="">Notification of Leaving Form</a>
+                <a href="" download={true}>Notification of Leaving Form</a>
               </li>
             </ul>
           </div>
