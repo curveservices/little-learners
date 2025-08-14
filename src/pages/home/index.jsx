@@ -66,7 +66,7 @@ const Home = () => {
               <Button
                 isInternal={false}
                 download={true}
-                link="/Application_to_Join_April_2018.doc"
+                link="/Application_to_join.doc"
                 text="Apply to Join"
               />
             </div>
@@ -170,7 +170,7 @@ const Home = () => {
 
         <CallToAction
           title="Open Times"
-          p1="Monday to Friday 8.30am - 4.00pm during term time"
+          p1="Monday to Thursday 8.30am - 4.00pm during term time"
           text1="Term Times"
           link1="https://lewisham.gov.uk/myservices/education/schools/term-dates/term-dates-25-26"
         />
