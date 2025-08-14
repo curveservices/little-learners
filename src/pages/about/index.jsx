@@ -84,7 +84,7 @@ const About = () => {
               p3="Outside the preschool, Sylwia is a woman of many passions. She’s a 1st Dan black belt in Kyokushinkai Karate, an avid reader, a regular runner, and a devoted dog lover. These interests reflect her calm focus, sense of discipline, and joy in movement and discovery—qualities she also nurtures in the children she teaches."
               p4="At Little Learners, Sylwia creates more than just a setting. She creates a community—one where curiosity is celebrated, friendships blossom, and children grow with confidence."
               text="Apply to Join"
-              link="/Application_to_Join_April_2018.doc"
+              link="/Application_to_join.doc"
               isInternal={false}
               download={true}
               img={about1}
@@ -134,7 +134,7 @@ const About = () => {
               p2="Each child is assigned a dedicated key teacher from their first day. This special bond helps us understand how your child learns, grows, and explores their interests—creating a more personalised experience."
               p3="We encourage two-way communication through regular chats at drop-off, pick-up, or by phone when needed. We always welcome feedback and respect each family’s values, culture, and individual needs."
               text="apply to join"
-              link="/Application_to_Join_April_2018.doc"
+              link="/Application_to_join.doc"
               isInternal={false}
               download={true}
               img={about4}
@@ -144,12 +144,16 @@ const About = () => {
         <FadeInSection>
           <section className="fith-section">
             <CallToAction
-              title="Progress Updates"
-              p1="We provide written progress checks for two-year-olds, highlighting development in key learning areas like communication, creativity, and overall growth."
-             
-              text1="contact us"
-              link1="/contact-us"
-              display="none"
+              title="Open Times"
+              p1="Monday to Thursday 8.30am - 4.00pm during term time"
+              text1="Term Times"
+              link1="https://lewisham.gov.uk/myservices/education/schools/term-dates/term-dates-25-26"
+              // title="Progress Updates"
+              // p1="We provide written progress checks for two-year-olds, highlighting development in key learning areas like communication, creativity, and overall growth."
+
+              // text1="contact us"
+              // link1="/contact-us"
+              // display="none"
             />
           </section>
         </FadeInSection>
