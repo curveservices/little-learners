@@ -11,7 +11,7 @@ const Footer = ({ isVisible }) => {
       <div className="footer-container">
         <div className="footer-left">
           <div className="footer-title">OPENING HOURS</div>
-          <div>Monday to Friday: 9:30am - 2:30pm</div>
+          <div>Monday to Thursday: 8:30am - 4:00pm</div>
           <div>During term time</div>
           <div className="footer-title">PRESCHOOL LOCATION</div>
           <div>Brandram Road Community Centre, </div>
