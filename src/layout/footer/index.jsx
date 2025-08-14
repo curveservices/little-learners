@@ -30,7 +30,7 @@ const Footer = ({ isVisible }) => {
             <Link to="/policies-and-procedures" className="link">
               Policies and Procedures
             </Link>
-            <a href="/Application_to_Join_April_2018.doc" className="link" download>
+            <a href="/Application_to_join.doc" className="link" download>
               Aplication to Join
             </a>
             <a

@@ -19,7 +19,7 @@ const QuickLinksPanel = () => {
       internal: false,
     },
     {
-      path: "/Application_to_Join_April_2018.doc",
+      path: "/Application_to_join.doc",
       label: "Application to Join",
       internal: false,
     },

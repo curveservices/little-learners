@@ -25,7 +25,7 @@ const Policies = () => {
             our up-to-date policies and procedures, so you can feel informed,
             confident, and supported every step of the way.
           </p>
-          <Button text="Apply to Join" />
+          <Button text="Apply to Join" link="/Application_to_join.doc" />
         </div>
         <img
           src={hero}
@@ -55,37 +55,59 @@ const Policies = () => {
                 </a>
               </li>
               <li>
-                <a href="" download={true}>Looked After Children</a>
+                <a href="" download={true}>
+                  Looked After Children
+                </a>
               </li>
               <li>
-                <a href="" download={true}>Uncollected Child</a>
+                <a href="" download={true}>
+                  Uncollected Child
+                </a>
               </li>
               <li>
-                <a href="" download={true}>Missing Child</a>
+                <a href="" download={true}>
+                  Missing Child
+                </a>
               </li>
               <li>
-                <a href="" download={true}>Online Safety</a>
+                <a href="" download={true}>
+                  Online Safety
+                </a>
               </li>
               <li>
-                <a href="" download={true}>Employment</a>
+                <a href="" download={true}>
+                  Employment
+                </a>
               </li>
               <li>
-                <a href="" download={true}>Student Placements</a>
+                <a href="" download={true}>
+                  Student Placements
+                </a>
               </li>
               <li>
-                <a href="" download={true}>First Aid</a>
+                <a href="" download={true}>
+                  First Aid
+                </a>
               </li>
               <li>
-                <a href="" download={true}>Induction of Employees and Volunteers</a>
+                <a href="" download={true}>
+                  Induction of Employees and Volunteers
+                </a>
               </li>
               <li>
-                <a href="" download={true}>The Role of the Key Person and Settling In</a>
+                <a href="" download={true}>
+                  The Role of the Key Person and Settling In
+                </a>
               </li>
               <li>
-                <a href="" download={true}>Staffing (group provision)</a>
+                <a href="" download={true}>
+                  Staffing (group provision)
+                </a>
               </li>
               <li>
-                <a href="" download={true}>Administering Medicines</a>
+                <a href="" download={true}>
+                  Administering Medicines
+                </a>
               </li>
             </ul>
             <ul>
@@ -100,19 +122,29 @@ const Policies = () => {
                 </a>
               </li>
               <li>
-                <a href="" download={true}>Nappy Changing</a>
+                <a href="" download={true}>
+                  Nappy Changing
+                </a>
               </li>
               <li>
-                <a href="" download={true}>Food and Drink</a>
+                <a href="" download={true}>
+                  Food and Drink
+                </a>
               </li>
               <li>
-                <a href="" download={true}>Individule Health Plan</a>
+                <a href="" download={true}>
+                  Individule Health Plan
+                </a>
               </li>
               <li>
-                <a href="" download={true}>Promoting Positive Behaviour</a>
+                <a href="" download={true}>
+                  Promoting Positive Behaviour
+                </a>
               </li>
               <li>
-                <a href="" download={true}>Health and Safety General Standards</a>
+                <a href="" download={true}>
+                  Health and Safety General Standards
+                </a>
               </li>
               <li>
                 <a href="" download={true}>
@@ -120,21 +152,31 @@ const Policies = () => {
                 </a>
               </li>
               <li>
-                <a href="" download={true}>Risk Assessment</a>
+                <a href="" download={true}>
+                  Risk Assessment
+                </a>
               </li>
               <li>
-                <a href="" download={true}>Fire Safety and Emergency Evacuation</a>
+                <a href="" download={true}>
+                  Fire Safety and Emergency Evacuation
+                </a>
               </li>
               <li>
-                <a href="" download={true}>No Smoking</a>
+                <a href="" download={true}>
+                  No Smoking
+                </a>
               </li>
               <li>
-                <a href="" download={true}>Staff Safety including Home Visits</a>
+                <a href="" download={true}>
+                  Staff Safety including Home Visits
+                </a>
               </li>
             </ul>
             <ul>
               <li>
-                <a href="" download={true}>Supporting Children with SEN</a>
+                <a href="" download={true}>
+                  Supporting Children with SEN
+                </a>
               </li>
               <li>
                 <a href="" download={true}>
@@ -142,55 +184,81 @@ const Policies = () => {
                 </a>
               </li>
               <li>
-                <a href="" download={true}>British Values</a>
+                <a href="" download={true}>
+                  British Values
+                </a>
               </li>
               <li>
-                <a href="" download={true}>Early Years Prospectus</a>
+                <a href="" download={true}>
+                  Early Years Prospectus
+                </a>
               </li>
               <li>
-                <a href="" download={true}>Sample Privacy Notice</a>
+                <a href="" download={true}>
+                  Sample Privacy Notice
+                </a>
               </li>
               <li>
-                <a href="" download={true}>Admissions October</a>
+                <a href="" download={true}>
+                  Admissions October
+                </a>
               </li>
               <li>
-                <a href="" download={true}>Parental Involvement</a>
+                <a href="" download={true}>
+                  Parental Involvement
+                </a>
               </li>
               <li>
-                <a href="" download={true}>Childrens Records April</a>
+                <a href="" download={true}>
+                  Childrens Records April
+                </a>
               </li>
               <li>
-                <a href="" download={true}>Provider Records April</a>
+                <a href="" download={true}>
+                  Provider Records April
+                </a>
               </li>
               <li>
-                <a href="" download={true}>Transfer of Records to School</a>
+                <a href="" download={true}>
+                  Transfer of Records to School
+                </a>
               </li>
               <li>
-                <a href="" download={true}>Information Sharing</a>
+                <a href="" download={true}>
+                  Information Sharing
+                </a>
               </li>
               <li>
-                <a href="" download={true}>Working in Partnership with Other Agencies</a>
+                <a href="" download={true}>
+                  Working in Partnership with Other Agencies
+                </a>
               </li>
               <li>
-                <a href="" download={true}>Making a Complaint</a>
+                <a href="" download={true}>
+                  Making a Complaint
+                </a>
               </li>
               <li>
-                <a href="" download={true}>Childcare Terms and Conditions</a>
+                <a href="" download={true}>
+                  Childcare Terms and Conditions
+                </a>
               </li>
               <li>
-                <a href="" download={true}>Notification of Leaving Form</a>
+                <a href="" download={true}>
+                  Notification of Leaving Form
+                </a>
               </li>
             </ul>
           </div>
         </section>
       </FadeInSection>
-        <CallToAction
-          title="Open Times"
-          p1="Monday to Friday 8.30am - 4.00pm during term time"
-          text1="Term Times"
-          link1="https://lewisham.gov.uk/myservices/education/schools/term-dates/term-dates-25-26"
-          text2="Apply to Join"
-        />
+      <CallToAction
+        title="Open Times"
+        p1="Monday to Thursday 8.30am - 4.00pm during term time"
+        text1="Term Times"
+        link1="https://lewisham.gov.uk/myservices/education/schools/term-dates/term-dates-25-26"
+        text2="Apply to Join"
+      />
     </div>
   );
 }
