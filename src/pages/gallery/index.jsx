@@ -1,5 +1,6 @@
 import hero from '../../assets/images/gallery-hero.webp';
 import Button from '../../components/button';
+import CallToAction from '../../components/cta';
 import Helmet from '../../components/helmet';
 import Gallery from '../../components/imageGallery';
 import useScrollStates from '../../components/scrollState';
@@ -42,7 +43,7 @@ const GalleryPage = () => {
             <div className="btn-container">
               <Button
                 text="Apply to Join Us"
-                link="/Application_to_Join_April_2018.doc"
+                link="/Application_to_join.doc"
                 isInternal={false}
                 download={true}
               />
@@ -97,6 +98,12 @@ const GalleryPage = () => {
             <Gallery galleryID="art" />
           </FadeInSection>
         </section>
+        <CallToAction
+          title="Open Times"
+          p1="Monday to Thursday 8.30am - 4.00pm during term time"
+          text1="Term Times"
+          link1="https://lewisham.gov.uk/myservices/education/schools/term-dates/term-dates-25-26"
+        />
         <FadeInSection>
           <section className="fourth-section">
             <Testimonials />
