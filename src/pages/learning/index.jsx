@@ -9,6 +9,7 @@ import AccordionGroup from "../../components/accordion/parent";
 import aboutBody from "../../assets/images/about-body.webp";
 import './index.scss';
 import Helmet from '../../components/helmet';
+import CallToAction from '../../components/cta';
 
 
 const LearningPlaying = () => {
@@ -66,7 +67,7 @@ const LearningPlaying = () => {
               p2="Each child is assigned a Key Worker who provides individual support and guidance. Together with our qualified teaching team, we blend child-led and teacher-led activities to help every child reach their potential. Their learning journey is documented from day one."
               p3="We value strong connections with families and offer an open-door policy, free trial sessions, and regular updates. Parents are always welcome, and we work closely with you to ensure your child has a happy, confident start at Little Learners."
               text="apply to join"
-              link="/Application_to_Join_April_2018.doc"
+              link="/Application_to_join.doc"
               isInternal={false}
               download={true}
               img={learning1}
@@ -215,6 +216,12 @@ const LearningPlaying = () => {
             </div>
           </section>
         </FadeInSection>
+        <CallToAction
+          title="Open Times"
+          p1="Monday to Thursday 8.30am - 4.00pm during term time"
+          text1="Term Times"
+          link1="https://lewisham.gov.uk/myservices/education/schools/term-dates/term-dates-25-26"
+        />
       </div>
     </>
   );
