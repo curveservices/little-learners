@@ -34,7 +34,7 @@ const Footer = ({ isVisible }) => {
               Aplication to Join
             </a>
             <a
-              href="/Childcare_Terms_and_Conditions_April_2018.doc"
+              href="/Childcare_Terms_and_Conditions.docx"
               download
               className="link"
             >
