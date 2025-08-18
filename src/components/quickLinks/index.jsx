@@ -14,7 +14,7 @@ const QuickLinksPanel = () => {
       internal: true,
     },
     {
-      path: "/Childcare_Terms_and_Conditions_April_2018.doc",
+      path: "/Childcare_Terms_and_Conditions.docx",
       label: "Terms and Conditions",
       internal: false,
     },
