@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+		<!--	created with www.mysitemapgenerator.com	-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+	<loc>https://www.littlelearners.co.uk/</loc>
+	<lastmod>2025-01-25T12:01:39+00:00</lastmod>
+	<priority>1.0</priority>
+	<changefreq>monthly</changefreq>
+</url>
+<url>
+	<loc>https://www.littlelearners.co.uk/about-us</loc>
+	<lastmod>2025-01-25T12:01:39+00:00</lastmod>
+	<priority>1.0</priority>
+	<changefreq>monthly</changefreq>
+</url>
+<url>
+	<loc>https://www.littlelearners.co.uk/learning-and-playing</loc>
+	<lastmod>2025-01-25T12:01:39+00:00</lastmod>
+	<priority>1</priority>
+	<changefreq>monthly</changefreq>
+</url>
+<url>
+	<loc>https://www.littlelearners.co.uk/gallery</loc>
+	<lastmod>2025-11-16T12:01:39+00:00</lastmod>
+	<priority>1</priority>
+</url>
+<url>
+	<loc>https://www.littlelearners.co.uk/contact-us</loc>
+	<lastmod>2025-01-25T12:01:39+00:00</lastmod>
+	<priority>1</priority>
+	<changefreq>monthly</changefreq>
+</url>
+<url>
+	<loc>https://www.littlelearners.co.uk/policies-and-procedures</loc>
+	<lastmod>2025-05-25T15:01:39+00:00</lastmod>
+	<priority>1.0</priority>
+</url>
+</urlset>

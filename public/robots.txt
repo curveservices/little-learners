@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /about-us
+Allow: /learning-and-playing
+Allow: /gallery
+Allow: /contact-us
+Allow: /policies-and-procedures
+Disallow: Application_to_join.doc
+Disallow:
