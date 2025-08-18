@@ -13,8 +13,6 @@ const NotFound = () => {
       </div>
       <Helmet
         title="Page Not Found"
-        description="Telegraph Hill Tutoring, I provide private tutoring for key stage 1 and 2 and 11 plus prep"
-        keywords="Private tutor, private lessons, 11 plus, key stage 1, key stage 2, South-east London, London"
       />
     </>
   );
