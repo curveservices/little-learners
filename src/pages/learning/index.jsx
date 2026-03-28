@@ -77,39 +77,6 @@ const LearningPlaying = () => {
             />
           </FadeInSection>
         </section>
-        <section className="third-section">
-          <FadeInSection>
-            <div className="text-row">
-              <TextAndImage
-                subtitle="learning and playing"
-                title="Curriculum Overview"
-                p1="We offer a diverse and fun programme for 2-4 year olds that encompasses the Early Years Foundation Stage Curriculum."
-                p2="All of this is underpinned by learning how to share, be considerate and show empathy towards others. Ours is a place not only of self-discovery, but also somewhere where first friendships and new bonds are formed and often blossom."
-                img={curriculum}
-                display={false}
-                flip
-              />
-            </div>
-          </FadeInSection>
-          <FadeInSection>
-            <div className="text-row">
-              <TextAndImage
-                subtitle="beyond the curriculum"
-                title="Going Beyond"
-                p1="We believe children are little sponges with a huge capacity to absorb information, given the right encouragement. This is why we like to extend our teaching beyond the curriculum. For example, we are one of very few nurseries to offer French lessons within our timetable."
-                p2="We would love to see you and meet your little learner. We offer regular open mornings and offer free trial sessions, so please do get in touch."
-                img={beyond}
-                display={false}
-                flip
-              />
-            </div>
-          </FadeInSection>
-        </section>
-        <FadeInSection>
-          <section className="fourth-section">
-            <AccordionGroup />
-          </section>
-        </FadeInSection>
         <FadeInSection>
           <section className="fith-section">
             <img
@@ -218,6 +185,40 @@ const LearningPlaying = () => {
             </div>
           </section>
         </FadeInSection>
+        <section className="third-section">
+          <FadeInSection>
+            <div className="text-row">
+              <TextAndImage
+                subtitle="learning and playing"
+                title="Curriculum Overview"
+                p1="We offer a diverse and fun programme for 2-4 year olds that encompasses the Early Years Foundation Stage Curriculum."
+                p2="All of this is underpinned by learning how to share, be considerate and show empathy towards others. Ours is a place not only of self-discovery, but also somewhere where first friendships and new bonds are formed and often blossom."
+                img={curriculum}
+                display={false}
+                flip
+              />
+            </div>
+          </FadeInSection>
+          <FadeInSection>
+            <div className="text-row">
+              <TextAndImage
+                subtitle="beyond the curriculum"
+                title="Going Beyond"
+                p1="We believe children are little sponges with a huge capacity to absorb information, given the right encouragement. This is why we like to extend our teaching beyond the curriculum. For example, we are one of very few nurseries to offer French lessons within our timetable."
+                p2="We would love to see you and meet your little learner. We offer regular open mornings and offer free trial sessions, so please do get in touch."
+                img={beyond}
+                display={false}
+                flip
+              />
+            </div>
+          </FadeInSection>
+        </section>
+        <FadeInSection>
+          <section className="fourth-section">
+            <AccordionGroup />
+          </section>
+        </FadeInSection>
+        
         <CallToAction
           title="Open Times"
           p1="Monday to Thursday 8.30am - 4.00pm during term time"
