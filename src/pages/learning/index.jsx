@@ -7,6 +7,7 @@ import learning1 from '../../assets/images/playing-learning.webp';
 import useScrollStates from '../../components/scrollState';
 import AccordionGroup from "../../components/accordion/parent";
 import aboutBody from "../../assets/images/about-body.webp";
+import background from "../../assets/images/red-splash.webp";
 import './index.scss';
 import Helmet from '../../components/helmet';
 import CallToAction from '../../components/cta';
@@ -35,6 +36,7 @@ const LearningPlaying = () => {
         }}
       />
       <div className="learning-page">
+        <img className="paint-splash" src={background} alt="" />  
         <section className="hero">
           <div className="text-box">
             <div className="subtitle">

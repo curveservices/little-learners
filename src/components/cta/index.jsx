@@ -8,9 +8,7 @@ const CallToAction = ({
   p2,
   text1,
   link1,
-  text2,
-  link2,
-  display,
+  isInternal,
 }) => {
   return (
     <>
@@ -29,6 +27,7 @@ const CallToAction = ({
           <Button
             text={text1}
             link={link1}
+            isInternal={isInternal}
           />
         </div>
       </div>

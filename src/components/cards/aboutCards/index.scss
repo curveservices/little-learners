@@ -1,8 +1,8 @@
-.card-container {
+.about-card-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 4rem;
   justify-content: center;
+  gap: 2rem;
   position: relative;
   padding: 4rem 0;
   .card {
@@ -10,7 +10,7 @@
     border-radius: 15px;
     box-shadow: var(--button-shadow);
     padding: 1rem;
-    width: 300px;
+    width: 320px;
     text-align: center;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
@@ -46,7 +46,7 @@
   }
 }
 @media screen and (max-Width: 768px) {
-  .card-container {
+  .about-card-container {
     gap: 1rem;
 
     .card {

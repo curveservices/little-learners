@@ -7,6 +7,7 @@ import home1 from "../../assets/images/home1.webp";
 import home2 from "../../assets/images/home2.webp";
 import messy from "../../assets/images/messy.webp";
 import funded from "../../assets/images/funded.webp";
+import background from "../../assets/images/pink-splash.webp";
 import CallToAction from "../../components/cta";
 import Testimonials from "../../components/testimonials";
 import useScrollStates from "../../components/scrollState";
@@ -49,6 +50,7 @@ const Home = () => {
         }}
       />
       <div className="home-page">
+        <img className="paint-splash" src={background} alt="Little learners preschool, Blackheath, London" />
         <section className="hero">
           <div className="text-box">
             <div className="subtitle">
@@ -77,7 +79,7 @@ const Home = () => {
             className="hero-image"
             loading="lazy"
             onLoad={() => setHeroLoaded(true)}
-            style={{ paddingTop: "1rem" }}
+            style={{ paddingTop: "2rem" }}
           />
         </section>
         {heroLoaded && (
@@ -173,6 +175,7 @@ const Home = () => {
           p1="Monday to Thursday 8.30am - 4.00pm during term time"
           text1="Term Times"
           link1="https://lewisham.gov.uk/myservices/education/schools/term-dates/term-dates-25-26"
+          isInternal={false}
         />
 
         <section className="fith-section">

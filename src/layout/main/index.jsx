@@ -57,7 +57,7 @@ const Layout = () => {
             Back to Top
           </button>
         </>
-      )};
+      )}
       <QuickLinksPanel />
       <Footer isVisible={showFooter} />
       <ScrollRestoration />

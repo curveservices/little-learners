@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from '../../components/button';
 import hero from "../../assets/images/documents.webp";
+import background from "../../assets/images/splash.webp";
 import useScrollStates from '../../components/scrollState';
 import "./index.scss";
 import CallToAction from '../../components/cta';
@@ -13,6 +14,7 @@ const Policies = () => {
   };
   return (
     <div className="policy-page">
+      <img className='paint-splash' src={background} alt="Little Learners Policies, Blackheath, London" />
       <section className="hero">
         <div className="text-box">
           <div className="subtitle">

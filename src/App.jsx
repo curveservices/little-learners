@@ -12,6 +12,7 @@ import NotFound from "./pages/404";
 const Home = lazy(() => import("./pages/home/index.jsx"));
 const About = lazy(() => import("./pages/about/index.jsx"));
 const LearningPlaying = lazy(() => import("./pages/learning/index.jsx"));
+const Fees = lazy(() => import("./pages/fees/index.jsx"));
 const GalleryPage = lazy(() => import("./pages/gallery/index.jsx"));
 const Contact = lazy(() => import("./pages/contact/index.jsx"));
 const Policies = lazy(() => import("./pages/policies/index.jsx"))
@@ -34,6 +35,14 @@ const router = createBrowserRouter(
           element={
             <Suspense fallback={<LoadingSpinner />}>
               <About />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/fees-and-pricing"
+          element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <Fees />
             </Suspense>
           }
         />
@@ -61,11 +70,11 @@ const router = createBrowserRouter(
             </Suspense>
           }
         />
-        <Route 
+        <Route
           path="/policies-and-procedures"
           element={
             <Suspense fallback={<LoadingSpinner />}>
-              <Policies/>
+              <Policies />
             </Suspense>
           }
         />

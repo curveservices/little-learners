@@ -57,6 +57,9 @@ const Footer = ({ isVisible }) => {
             <Link to="learning-and-playing" className="link">
               LEARNING AND PLAYING
             </Link>
+            <Link to="fees-and-pricing" className="link">
+              FEES AND PRICING
+            </Link>
             <Link to="/gallery" className="link">
               GALLERY
             </Link>

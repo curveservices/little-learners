@@ -5,6 +5,7 @@ import about1 from "../../assets/images/sylwia.webp";
 import about2 from "../../assets/images/about2.webp";
 import about3 from "../../assets/images/about3.webp";
 import about4 from "../../assets/images/about4.webp";
+import background from "../../assets/images/yellow-splash.webp";
 import aboutBody from "../../assets/images/about-body.webp";
 import AboutCards from "../../components/cards/aboutCards";
 import "./index.scss";
@@ -40,6 +41,7 @@ const About = () => {
         }}
       />
       <div className="about-page">
+        <img className="paint-splash" src={background} alt="" />
         <section className="hero">
           <div className="text-box">
             <div className="subtitle">

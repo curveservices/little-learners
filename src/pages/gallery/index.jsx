@@ -3,6 +3,7 @@ import Button from '../../components/button';
 import CallToAction from '../../components/cta';
 import Helmet from '../../components/helmet';
 import Gallery from '../../components/imageGallery';
+import background from "../../assets/images/blue-splash.webp";
 import useScrollStates from '../../components/scrollState';
 import Testimonials from "../../components/testimonials";
 import './index.scss';
@@ -29,6 +30,7 @@ const GalleryPage = () => {
         }}
       />
       <div className="gallery-page">
+        <img className="paint-splash" src={background} alt="Little learners preschool, Blackheath, London" />
         <section className="hero">
           <div className="text-box">
             <div className="subtitle">

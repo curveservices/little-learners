@@ -5,7 +5,9 @@ import "./index.scss";
 
 const Cards = (props) => {
   return (
-    <div className="cards-container">
+    <>
+    <div className="section-title">Our Promise To You And Your Little One</div>
+    <div className="home-cards-container">
       <div className="card">
         <img
           src={props.card1 || card1}
@@ -32,8 +34,7 @@ const Cards = (props) => {
           {props.card2Title || "Somewhere To Flourish"}
         </h3>
         <p className="card-description">
-          Children will gain confidence and begin a lifelong  passion for
-          learning
+          {props.card2P || "Children will gain confidence and begin a lifelong  passion for learning"}
         </p>
       </div>
       <div className="card">
@@ -52,6 +53,7 @@ const Cards = (props) => {
         </p>
       </div>
     </div>
+    </>
   );
 };
 
