@@ -8,7 +8,7 @@ const PricingCard = ({ title, data }) => {
           <tr>
             <th>Session</th>
             <th>Time</th>
-            <th>Daily</th>
+            <th>Weekly</th>
             <th>Term</th>
           </tr>
         </thead>

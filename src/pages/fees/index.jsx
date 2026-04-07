@@ -18,11 +18,11 @@ import Accordion from "../../components/accordion/fees";
 import splash from "../../assets/images/abstract-background.webp";
 import background from "../../assets/images/splash.webp";
 import img1 from "../../assets/images/card1.webp";
-import img2 from "../../assets/images/baking.webp";
+import img2 from "../../assets/images/dog.webp";
 import img3 from "../../assets/images/gardening.webp";
 import img4 from "../../assets/images/pe.webp";
-import img5 from "../../assets/images/updates.webp";
-import img6 from "../../assets/images/group.webp";
+import img5 from "../../assets/images/group.webp";
+import img6 from "../../assets/images/bsl.webp";
 import IncludedGrid from "../../components/fees/IncludeGrid";
 import CallToAction from "../../components/cta";
 
@@ -57,17 +57,17 @@ const valueData = [
 
 const includedItems = [
   {
-    title: "Creative & Sensory Play",
+    title: "Messy & Sensory Play",
     short: "Crafts, messy play & exploration",
     detail:
       "Themed crafts, sensory materials and hands-on activities that spark creativity and curiosity",
     image: img1,
   },
   {
-    title: "Cooking & Baking",
-    short: "Learning through food",
+    title: "Dog Care & Interaction",
+    short: "Emotional support dog",
     detail:
-      "Fun, guided sessions using fresh ingredients to build confidence and practical life skills",
+      "Gentle interaction with a trained support dog to build confidence and emotional wellbeing",
     image: img2,
   },
   {
@@ -81,20 +81,20 @@ const includedItems = [
     title: "Enrichment Activities",
     short: "Yoga, PE & special visits",
     detail:
-      "Including yoga, physical education, visiting educators and an emotional support dog",
+      "Including yoga, physical education and visiting educators to support development.",
     image: img4,
-  },
-  {
-    title: "Communication & Updates",
-    short: "Weekly parent updates",
-    detail:
-      "Regular newsletters and updates to keep families informed and involved",
-    image: img5,
   },
   {
     title: "Small Group Setting",
     short: "Max 16 children",
     detail: "A calm, nurturing environment with more attention for every child",
+    image: img5,
+  },
+  {
+    title: "British Sign Language",
+    short: "Early communication skills",
+    detail:
+      "Introducing BSL to support communication, inclusion and confidence",
     image: img6,
   },
 ];

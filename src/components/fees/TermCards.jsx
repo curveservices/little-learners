@@ -4,54 +4,36 @@ import Button from "../button";
 const TermCards = () => {
   const terms = [
     {
-      year: "2025–2026",
-      data: [
-        {
-          term: "Autumn ",
-          weeks: "14 weeks",
-          dates1: "1st September to  24th October",
-          dates2: "Half Term 27th - 31st October",
-          dates3: "3rd November to 19th December",
-        },
-        {
-          term: "Spring ",
-          weeks: "11 weeks",
-          dates1: "5th January to 13th February",
-          dates2: "Half Term 16th - 20th February",
-          dates3: "23rd February to 27th March",
-        },
-        {
-          term: "Summer ",
-          weeks: "13 weeks",
-          dates1: "13th April to 22nd May",
-          dates2: "Half Term 25th - 29th May",
-          dates3: "1st June to 20th July",
-        },
-      ],
-    },
-    {
       year: "2026–2027",
       data: [
         {
           term: "Autumn ",
           weeks: "14 weeks",
-          dates1: "2nd September to 23rd October",
-          dates2: "Half Term 26th - 30th October",
-          dates3: "2nd November to 18th December",
         },
         {
           term: "Spring ",
           weeks: "12 weeks",
-          dates1: "4th January to 12th February",
-          dates2: "Half Term 15th - 19th February",
-          dates3: "22nd February to 25th March",
         },
         {
           term: "Summer ",
           weeks: "12 weeks",
-          dates1: "12th April to 28th May",
-          dates2: "Half Term 31st - 4th June",
-          dates3: "7th June to 22nd July",
+        },
+      ],
+    },
+    {
+      year: "2027–2028",
+      data: [
+        {
+          term: "Autumn ",
+          weeks: "14 weeks",
+        },
+        {
+          term: "Spring ",
+          weeks: "12 weeks",
+        },
+        {
+          term: "Summer ",
+          weeks: "12 weeks",
         },
       ],
     },
@@ -86,11 +68,8 @@ const TermCards = () => {
                 <ul key={idx} className="term-details">
                 <li >
                   <span>{t.term}</span>
-                  <span>{t.weeks}</span>
+                    <span>{t.weeks}</span>
                 </li>
-                  <li  className="tdates"> {t.dates1}</li>
-                  <li className="tdates">{t.dates2}</li>
-                  <li className="tdates">{t.dates3}</li>
                 </ul>
               ))}
             </ul>

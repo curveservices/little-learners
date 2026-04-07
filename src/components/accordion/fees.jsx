@@ -40,7 +40,12 @@ const AccordionGroup = () => {
               Please note that we require full term notice if you wish to cancel
               your child’s access to the 15h and/or 30h government funded hours
             </li>
-            <li>we do not split the funding between other settings.</li>
+            <li>
+              A full term’s fees will be payable in the absence of such notice.
+              The funding from the Local Authority can’t be used as part of the
+              fees in lieu of the notice
+            </li>
+            <li>We do not split the funding between other settings.</li>
           </ul>
         </Accordion>
         <Accordion
