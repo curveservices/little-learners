@@ -19,18 +19,22 @@ const GalleryPage = () => {
       <Helmet
         title="Gallery | Little Learners Preschool in Action"
         description="View our gallery and see Little Learners in action — from playtime and activities to seasonal celebrations and special events."
-        keywords="preschool photos, nursery gallery, Blackheath preschool images, early years photo gallery"
+        keywords="blackheath preschool, blackheath nursery, blackheath london, preschool photos, nursery gallery, Blackheath preschool images, early years photo gallery"
         schemaMarkup={{
           "@context": "https://schema.org",
           "@type": "ImageGallery",
           name: "Little Learners Preschool Gallery",
-          url: "https://www.littlelearnersplaygroup.com/gallery",
+          url: "https://www.littlelearnerspreschool.uk/gallery",
           description:
             "A photo gallery showcasing the children and activities at Little Learners Preschool.",
         }}
       />
       <div className="gallery-page">
-        <img className="paint-splash" src={background} alt="Little learners preschool, Blackheath, London" />
+        <img
+          className="paint-splash"
+          src={background}
+          alt="Little learners preschool, Blackheath, London"
+        />
         <section className="hero">
           <div className="text-box">
             <div className="subtitle">

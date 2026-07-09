@@ -32,7 +32,7 @@ const Home = () => {
           "@context": "https://schema.org",
           "@type": "Preschool",
           name: "Little Learners Preschool",
-          url: "https://www.littlelearnersplaygroup.com",
+          url: "https://www.littlelearnerspreschool.uk",
           image:
             "https://www.littlelearnersplaygroup.com/assets/images/home-hero.webp",
           description:
@@ -50,7 +50,11 @@ const Home = () => {
         }}
       />
       <div className="home-page">
-        <img className="paint-splash" src={background} alt="Little learners preschool, Blackheath, London" />
+        <img
+          className="paint-splash"
+          src={background}
+          alt="Little learners preschool, Blackheath, London"
+        />
         <section className="hero">
           <div className="text-box">
             <div className="subtitle">

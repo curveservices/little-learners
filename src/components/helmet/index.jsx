@@ -26,9 +26,9 @@ const Helmet = ({ title, description, keywords, schemaMarkup }) => {
       "og:title": title,
       "og:description": description,
       "og:type": "website",
-      "og:url": "https://littlelearnersplaygroup.com",
+      "og:url": "https://www.littlelearnerspreschool.uk/",
       "og:image":
-      "https://www.littlelearnersplaygroup.com/assets/images/home-hero.webp",
+        "https://www.littlelearnerspreschool.uk/assets/images/hero-body.webp",
     };
 
     Object.entries(ogTags).forEach(([property, content]) => {

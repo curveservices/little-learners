@@ -24,7 +24,7 @@ const LearningPlaying = () => {
       <Helmet
         title="Learning & Playing | Little Learners Preschool Curriculum"
         description="Explore our Early Years Foundation Stage curriculum. Discover how we support your child’s growth through structured play, creativity, and positive relationships."
-        keywords="EYFS curriculum, learning through play, preschool education, Little Learners curriculum, early years activities"
+        keywords="blackheath preschool, blackheath nursery, blackheath london, EYFS curriculum, learning through play, preschool education, Little Learners curriculum, early years activities"
         schemaMarkup={{
           "@context": "https://schema.org",
           "@type": "Preschool",
@@ -32,11 +32,11 @@ const LearningPlaying = () => {
           description:
             "Little Learners offers a balanced curriculum combining structured play and personalised learning for preschool children aged 2–4.",
           educationalLevel: "Preschool",
-          url: "https://www.littlelearnersplaygroup.com/learning-and-playing",
+          url: "https://www.littlelearnerspreschool.uk/learning-and-playing",
         }}
       />
       <div className="learning-page">
-        <img className="paint-splash" src={background} alt="" />  
+        <img className="paint-splash" src={background} alt="" />
         <section className="hero">
           <div className="text-box">
             <div className="subtitle">
@@ -218,7 +218,7 @@ const LearningPlaying = () => {
             <AccordionGroup />
           </section>
         </FadeInSection>
-        
+
         <CallToAction
           title="Open Times"
           p1="Monday to Thursday 8.30am - 4.00pm during term time"

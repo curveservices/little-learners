@@ -15,17 +15,17 @@ const Contact = () => {
         schemaMarkup={{
           "@context": "https://schema.org",
           "@type": "Preschool",
-          "name": "Little Learners Preschool",
-          "telephone": "07595 120744",
-          "email": "info@littlelearnersplaygroup.com",
-          "address": {
+          name: "Little Learners Preschool",
+          telephone: "07595 120744",
+          email: "info@littlelearnersplaygroup.com",
+          address: {
             "@type": "PostalAddress",
-            "streetAddress": "25-33 Brandram Road",
-            "addressLocality": "London",
-            "postalCode": "SE13 5RT",
-            "addressCountry": "UK",
+            streetAddress: "25-33 Brandram Road",
+            addressLocality: "London",
+            postalCode: "SE13 5RT",
+            addressCountry: "UK",
           },
-          "url": "https://www.littlelearnersplaygroup.com/contact-us",
+          url: "https://www.littlelearnerspreschool.uk/contact-us",
         }}
       />
       <div className="contact-page">

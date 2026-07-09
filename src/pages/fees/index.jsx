@@ -113,7 +113,7 @@ const Fees = () => {
           title="Fees & Pricing | Little Learners Preschool Pricing"
           description="Explore 
         our Early Years Foundation Stage curriculum. Discover how we support your child’s growth through structured play, creativity, and positive relationships."
-          keywords="EYFS curriculum, learning through play, preschool education, Little Learners curriculum, early years activities"
+          keywords="preschool blackheath, blackheath nursery, blackheath london,EYFS curriculum, learning through play, preschool education, Little Learners curriculum, early years activities"
           schemaMarkup={{
             "@context": "https://schema.org",
             "@type": "Preschool",
@@ -121,7 +121,7 @@ const Fees = () => {
             description:
               "Little Learners offers a balanced curriculum combining structured play and personalised learning for preschool children aged 2–4.",
             educationalLevel: "Preschool",
-            url: "https://www.littlelearnersplaygroup.com/learning-and-playing",
+            url: "https://www.littlelearnerspreschool.uk/learning-and-playing",
           }}
         />
         <div className="fees-page">
@@ -178,12 +178,12 @@ const Fees = () => {
               <img className="splash" src={splash} alt="Splash image" />
               <PricingTabs />
             </FadeInSection>
-            
-              <div className="included-grid">
-                <div className="content">
-                  <IncludedGrid items={includedItems} />
-                </div>
+
+            <div className="included-grid">
+              <div className="content">
+                <IncludedGrid items={includedItems} />
               </div>
+            </div>
           </section>
           <FadeInSection>
             <div className="banner block">
