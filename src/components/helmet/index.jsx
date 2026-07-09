@@ -26,7 +26,7 @@ const Helmet = ({ title, description, keywords, schemaMarkup }) => {
       "og:title": title,
       "og:description": description,
       "og:type": "website",
-      "og:url": "https://www.littlelearnersplaygroup.com",
+      "og:url": "https://littlelearnersplaygroup.com",
       "og:image":
       "https://www.littlelearnersplaygroup.com/assets/images/home-hero.webp",
     };

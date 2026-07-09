@@ -25,6 +25,7 @@ const About = () => {
         title="About Us | Little Learners Preschool in Blackheath, London"
         description="Meet Sylwia and the team at Little Learners Preschool. Learn more about our ethos, leadership, and what makes our nurturing environment so special for children aged 2–4."
         keywords="About Little Learners, preschool staff, Blackheath nursery, early years education, meet the team"
+        link = "https://littlelearnerspreschool.uk/about-us"
         schemaMarkup={{
           "@context": "https://schema.org",
           "@type": "Preschool",
