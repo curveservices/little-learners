@@ -3,6 +3,7 @@ import Button from '../../components/button';
 import hero from "../../assets/images/documents.webp";
 import background from "../../assets/images/splash.webp";
 import useScrollStates from '../../components/scrollState';
+import Helmet from '../../components/helmet';
 import "./index.scss";
 import CallToAction from '../../components/cta';
 
