@@ -1,38 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-		<!--	created with www.mysitemapgenerator.com	-->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-	<loc>https://www.littlelearnpreschool.com/</loc>
-	<lastmod>2025-08-20T12:01:39+00:00</lastmod>
-	<priority>1.0</priority>
-	<changefreq>monthly</changefreq>
+	<loc>https://www.littlelearnerspreschool.uk/</loc>
 </url>
 <url>
-	<loc>https://www.littlelearnpreschool.com/about-us</loc>
-	<lastmod>2025-08-20T12:01:39+00:00</lastmod>
-	<priority>1.0</priority>
-	<changefreq>monthly</changefreq>
+	<loc>https://www.littlelearnerspreschool.uk/about-us</loc>
 </url>
 <url>
-	<loc>https://www.littlelearnpreschool.com/learning-and-playing</loc>
-	<lastmod>2025-08-20T12:01:39+00:00</lastmod>
-	<priority>1</priority>
-	<changefreq>monthly</changefreq>
+	<loc>https://www.littlelearnerspreschool.uk/learning-and-playing</loc>
 </url>
 <url>
-	<loc>https://www.littlelearnpreschool.com/gallery</loc>
-	<lastmod>2025-08-20T12:01:39+00:00</lastmod>
-	<priority>1</priority>
+	<loc>https://www.littlelearnerspreschool.uk/gallery</loc>
 </url>
 <url>
-	<loc>https://www.littlelearnpreschool.com/contact-us</loc>
-	<lastmod>2025-08-20T12:01:39+00:00</lastmod>
-	<priority>1</priority>
-	<changefreq>monthly</changefreq>
+	<loc>https://www.littlelearnerspreschool.uk/contact-us</loc>
 </url>
 <url>
-	<loc>https://www.littlelearnpreschool.com/policies-and-procedures</loc>
-	<lastmod>2025-08-20T15:01:39+00:00</lastmod>
-	<priority>1.0</priority>
+	<loc>https://www.littlelearnerspreschool.uk/policies-and-procedures</loc>
 </url>
+<url>
+<loc>https://www.littlelearnerspreschool.uk/fees-and-pricing</loc>
 </urlset>
