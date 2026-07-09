@@ -4,4 +4,5 @@ Allow: /learning-and-playing
 Allow: /gallery
 Allow: /contact-us
 Allow: /policies-and-procedures
+Allow: /fees-and-pricing
 Disallow: /Application_to_join.doc
